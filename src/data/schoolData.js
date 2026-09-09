@@ -134,20 +134,38 @@ export const WHY_CHOOSE_ITEMS = [
 
 export const FOUNDERS_MEMORIAL = [
   {
+    id: 'founder-narottam-das',
     name: 'Late Sh. Narottam Das',
     title: 'Revered Founder & Visionary Pillar',
     role: 'Founder, RV Educational Trust',
     legacyText: 'A venerable philanthropist and visionary educational pioneer who laid the foundation stone of RV Educational Trust in 2012. He championed the unyielding conviction that every child in southern Agra and adjoining rural corridors deserves access to high-caliber, affordable, and values-rooted English-medium education.',
     quote: '"True education does not stop at books; it ignites righteous character, moral courage, and selfless devotion to humanity."',
-    imageUrl: '/assets/photos/narottam_das.jpeg'
+    imageUrl: '/assets/photos/narottam_das.jpeg',
+    fullMessage: `Late Sh. Narottam Das, founder of N.D. Educational Trust, envisioned a school in rural southern Agra to provide quality education to children with limited access due to distance and economic constraints.
+
+In the early 2000s, he laid the foundation of RV Public School (2012) with a heartfelt commitment to fulfill his dream and honor the memory of his beloved wife.
+
+Spread across eight acres, the school nurtures holistic growth, encouraging excellence, confidence, and responsible citizenship.
+
+The RVPS Society strives to go beyond formal education by fostering all-round development.
+
+A visionary with a kind heart, he believed in building integrated personalities by balancing body, mind, and aspirations.
+
+Under the guidance of Sh. N.D. Sharma, the institution continues to uphold his ideals of excellence and quality education.`
   },
   {
+    id: 'founder-ramvati-devi',
     name: 'Late Smt. Ramvati Devi',
     title: 'Inspirational Matriarch & Patroness',
     role: 'Guiding Light & Moral Inspiration',
     legacyText: 'The sacred memory and noble spirit in whose venerated honor R.V. Public School was christened. Her lifelong devotion to children’s well-being, boundless maternal compassion for the underprivileged, and passionate advocacy for girls’ education remain the guiding light of our institution.',
     quote: '"When you enlighten the mind of a child with kindness and knowledge, you illuminate generations with grace and dignity."',
-    imageUrl: '/assets/photos/ramvati_devi.jpeg'
+    imageUrl: '/assets/photos/ramvati_devi.jpeg',
+    fullMessage: `Late Smt. Ramvati Devi was the revered matriarch, patroness, and guiding moral beacon in whose sacred and loving memory R.V. Public School was established.
+
+Her life stood as a glowing testament to selfless compassion, humility, and steadfast commitment to the welfare of every child. She held a profound, visionary belief that educating a child—particularly young girls in rural and developing regions—transforms entire generations and uplifts society with dignity.
+
+Her enduring values of kindness, moral integrity, discipline, and maternal care are woven into the very fabric of our school. Every endeavor undertaken at R.V. Public School is a living tribute to her blessed memory and her timeless conviction that every child deserves the warmth of guidance and the illumination of knowledge.`
   }
 ];
 
@@ -159,7 +177,33 @@ export const LEADERSHIP_MESSAGES = [
     qualifications: 'M.Sc., B.Ed.',
     motto: 'Truth Ever Prevails — Satyam Eva Jayate',
     excerpt: 'Fostering academic rigor, disciplined curiosity, and individual care that eliminates any dependency on outside coaching.',
-    fullMessage: 'It is a profound privilege to lead this vibrant community of 85+ dedicated teachers and over two thousand eager scholars. Our pedagogical framework guarantees that every child receives thoughtful, individualized attention. Through integrated remedial periods, continuous chapter assessments, and strong parent-school communication, we build enduring self-confidence and deep conceptual understanding.',
+    fullMessage: `"The best way to predict your future is to weave it."
+
+True education aims at drawing out the very best lying latent in a student's personality by providing opportunities for the all-round and integrated development of body, mind, and soul.
+
+"Education doesn't mean to teach what one doesn't know but to behave what one doesn't behave."
+
+R.V. Public School is committed to providing disciplined and quality education while promoting innovation, intellectual growth, and career readiness.
+
+We firmly believe that education transforms lives and prepares students to become responsible citizens who contribute meaningfully to society and the nation.
+
+The destiny of a nation is shaped in its classrooms, and teachers are the backbone of society.
+
+Our dedicated teachers and mentors guide every student throughout their academic journey while ensuring excellence, safety, confidence, discipline, and holistic development.
+
+We strive to nurture compassionate, responsible, and morally strong individuals who will lead the nation toward a brighter future.
+
+The philosophy of RVPS is founded on self-discipline, hard work, perseverance, balanced thinking, and the greatest benefit of every learner.
+
+We envision a world that is more prosperous, peaceful, and humane, where today's youth become tomorrow's responsible leaders.
+
+Our mission is to empower students with knowledge, life skills, compassion, confidence, and humanity so they can overcome challenges and create positive change.
+
+RV Public School remains committed to preparing students for a future free from ignorance, poverty, discrimination, and social barriers.
+
+May all your dreams transform into reality.
+
+"Truth Ever Prevails."`,
     imageUrl: '/assets/photos/Principal.jpeg'
   },
   {
@@ -168,7 +212,17 @@ export const LEADERSHIP_MESSAGES = [
     designation: 'Managing Director',
     motto: 'Infrastructure for Excellence — Safe & Inspiring',
     excerpt: 'Investing relentlessly in world-class campus infrastructure, smart digital classrooms, student safety, and state-of-the-art sports turf.',
-    fullMessage: "A great educational institution requires noble ideals supported by uncompromising physical infrastructure. Over the last 14 years, we have continually upgraded our campus with Agra's finest sports arena, modern computer labs, air-cooled digital smart classrooms, and a safe GPS-tracked bus network. We promise parents complete peace of mind and an environment where their children can flourish without limits.",
+    fullMessage: `At RV Public School, we strongly believe that true education extends far beyond the classroom.
+
+Modern infrastructure and a nurturing environment are essential to providing students with meaningful learning experiences.
+
+We are continuously enhancing our facilities to create an engaging, comfortable, and future-ready educational environment.
+
+Alongside academic excellence, we place great emphasis on sports and physical development.
+
+Participation in sports helps students develop confidence, discipline, teamwork, leadership, and resilience.
+
+Our commitment is to continuously upgrade our campus and provide every child with opportunities to discover their talents, achieve their potential, and become responsible global citizens.`,
     imageUrl: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=800&auto=format&fit=crop'
   },
   {
@@ -177,7 +231,29 @@ export const LEADERSHIP_MESSAGES = [
     designation: 'Chairman, RV Educational Trust',
     motto: 'Character Before Success, Values Above All',
     excerpt: 'Our commitment is to nurture disciplined, visionary citizens who respect Indian cultural heritage while achieving modern excellence.',
-    fullMessage: 'At R.V. Public School, our mission has never been confined to producing examination rank-holders. We strive to craft upright, courageous, and compassionate human beings. Our 8-acre campus provides the ideal setting where students discover their talents, grounded in moral principles and inspired by intellectual curiosity.',
+    fullMessage: `It gives me immense pride and heartfelt emotion to present RV Public School—an institution that stands as a tribute to values, vision, and legacy.
+
+This school was founded by my respected father in the loving memory of my late mother, whose belief in the power of education continues to guide us.
+
+Established in a rural area, our mission has always been to provide quality education to all, especially to girls, at an affordable cost so that no child is deprived of learning opportunities.
+
+I firmly believe that the quality of education shapes not only the destiny of a child but also that of a nation.
+
+At RV Public School, we strive to offer holistic education that goes beyond academics by nurturing co-curricular excellence, sportsmanship, and essential life skills.
+
+Our teachers are committed to building confidence, curiosity, trust, discipline, and strong moral values in every child.
+
+Inspired by the ideals of my parents, we continue working tirelessly to take this institution to greater heights while empowering every child through education.
+
+I warmly invite you to become a part of the RV Public School family.
+
+"If you educate a man you educate an individual, but if you educate a girl you educate the whole nation."
+
+With Best Wishes
+
+Mr. Umesh Chand Sharma
+Chairman
+RV Public School`,
     imageUrl: '/assets/photos/chairman.jpeg'
   },
   {
@@ -186,7 +262,33 @@ export const LEADERSHIP_MESSAGES = [
     designation: 'Vice Chairman',
     motto: 'From Classroom to Career — NEP 2020 Leadership',
     excerpt: 'Bridging foundational schooling with practical future skills through modern science laboratories, computer education, and sports coaching.',
-    fullMessage: 'Under our pedagogical roadmap, education transcends the boundaries of prescribed textbooks. Aligned with NEP 2020, we emphasize hands-on laboratory experiments, competitive athletics, and communicative fluency. We ensure that when an RVite completes Class XII, they are fully equipped for prestigious universities and national competitive examinations.',
+    fullMessage: `Dear Students and Parents,
+
+Welcome to RV Public School.
+
+It is my privilege to welcome you to our vibrant learning community.
+
+At RVPS, we combine tradition with innovation to create an educational environment where students are encouraged to dream big and achieve excellence.
+
+We continuously improve our curriculum through innovative teaching practices, project-based learning, collaborative activities, and modern educational technologies.
+
+Aligned with the National Education Policy (NEP 2020), we promote flexible, multidisciplinary, and holistic education.
+
+Guided by our motto,
+
+"From Classroom to Career,"
+
+we prepare students for real-world success.
+
+We also emphasize remedial teaching to reduce dependence on external tuition while maintaining a democratic work culture that empowers our faculty.
+
+Beyond academics, we provide abundant opportunities in sports, music, arts, leadership, and community service so that every child can discover and develop their unique talents.
+
+We are committed to strengthening our infrastructure through modern classrooms, advanced laboratories, and upgraded facilities.
+
+Equally important is our focus on student well-being, inclusiveness, respect, and a supportive school culture.
+
+Together, let us continue building RV Public School into a center of educational excellence where every child can flourish.`,
     imageUrl: '/assets/photos/bharat.jpeg'
   }
 ];

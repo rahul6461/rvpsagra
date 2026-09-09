@@ -134,11 +134,11 @@ export const AboutSection = () => {
                       <span className="text-[11px] font-semibold text-slate-500">RV Educational Trust</span>
                       <button
                         onClick={(e) => handleOpenMessage({
-                          id: founder.id,
+                          id: founder.id || `founder-${idx}`,
                           name: founder.name,
                           designation: founder.role,
                           motto: founder.title,
-                          fullMessage: founder.fullMessage,
+                          fullMessage: founder.fullMessage || founder.legacyText,
                           imageUrl: founder.imageUrl
                         }, e)}
                         className="text-xs font-bold text-blue-700 hover:text-blue-900 flex items-center gap-1 cursor-pointer transition-colors"
@@ -370,13 +370,19 @@ export const AboutSection = () => {
                     const trimmed = paragraph.trim();
                     if (!trimmed) return null;
 
-                    // Quote paragraph styling (e.g. Chairman's famous quote)
-                    if ((trimmed.startsWith('"') && trimmed.endsWith('"')) || (trimmed.startsWith('*"') && trimmed.endsWith('*"'))) {
-                      const cleanQuote = trimmed.replace(/\*/g, '');
+                    const lowerTrimmed = trimmed.toLowerCase();
+
+                    // Quote paragraph styling (e.g. Chairman's famous quote or Principal's motto)
+                    if (
+                      (trimmed.startsWith('"') && trimmed.endsWith('"')) ||
+                      (trimmed.startsWith('*"') && trimmed.endsWith('*"')) ||
+                      (trimmed.startsWith('**"') && trimmed.endsWith('"**'))
+                    ) {
+                      const cleanQuote = trimmed.replace(/[\*]/g, '');
                       return (
                         <blockquote
                           key={pIdx}
-                          className="p-4 my-2 rounded-2xl bg-blue-50/80 border-l-4 border-blue-600 text-blue-950 font-serif italic text-sm sm:text-base shadow-xs"
+                          className="p-4 my-2 rounded-2xl bg-blue-50/90 border-l-4 border-blue-600 text-blue-950 font-serif italic text-sm sm:text-base shadow-xs"
                         >
                           {cleanQuote}
                         </blockquote>
@@ -385,14 +391,15 @@ export const AboutSection = () => {
 
                     // Formal sign-off
                     if (
-                      trimmed.startsWith('With best wishes,') ||
+                      lowerTrimmed.startsWith('with best wishes') ||
+                      lowerTrimmed.startsWith('**with best wishes') ||
                       trimmed.startsWith('Chairman\n') ||
-                      trimmed.startsWith('**With best wishes,**')
+                      trimmed.startsWith('Principal\n')
                     ) {
                       return (
                         <div
                           key={pIdx}
-                          className="pt-3 border-t border-blue-50 text-slate-900 font-medium whitespace-pre-line text-sm sm:text-base"
+                          className="pt-4 border-t border-blue-100 text-slate-900 font-semibold whitespace-pre-line text-sm sm:text-base leading-relaxed"
                         >
                           {trimmed.replace(/\*\*/g, '')}
                         </div>
@@ -401,7 +408,7 @@ export const AboutSection = () => {
 
                     return (
                       <p key={pIdx} className="whitespace-pre-line">
-                        {trimmed}
+                        {trimmed.replace(/\*\*/g, '')}
                       </p>
                     );
                   })
