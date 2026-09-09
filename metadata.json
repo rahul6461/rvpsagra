@@ -1,0 +1,6 @@
+{
+  "name": "R.V. Public School, Agra",
+  "description": "Official portal of R.V. Public School, Agra — CBSE Affiliated Senior Secondary (10+2), Affiliation No. 2131798, School Code: 60756. 8-Acre Green Campus at Rohta, Gwalior Road, Agra.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
