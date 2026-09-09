@@ -187,7 +187,7 @@ export const LEADERSHIP_MESSAGES = [
     motto: 'From Classroom to Career — NEP 2020 Leadership',
     excerpt: 'Bridging foundational schooling with practical future skills through modern science laboratories, computer education, and sports coaching.',
     fullMessage: 'Under our pedagogical roadmap, education transcends the boundaries of prescribed textbooks. Aligned with NEP 2020, we emphasize hands-on laboratory experiments, competitive athletics, and communicative fluency. We ensure that when an RVite completes Class XII, they are fully equipped for prestigious universities and national competitive examinations.',
-    imageUrl: '/assets/photos/vice-chairman.jpeg'
+    imageUrl: '/assets/photos/bharat.jpeg'
   }
 ];
 
