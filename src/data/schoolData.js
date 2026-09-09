@@ -139,7 +139,7 @@ export const FOUNDERS_MEMORIAL = [
     role: 'Founder, RV Educational Trust',
     legacyText: 'A venerable philanthropist and visionary educational pioneer who laid the foundation stone of RV Educational Trust in 2012. He championed the unyielding conviction that every child in southern Agra and adjoining rural corridors deserves access to high-caliber, affordable, and values-rooted English-medium education.',
     quote: '"True education does not stop at books; it ignites righteous character, moral courage, and selfless devotion to humanity."',
-    imageUrl: 'https://images.unsplash.com/photo-1507679799987-c73779587ccf?q=80&w=800&auto=format&fit=crop'
+    imageUrl: '/assets/photos/narottam_das.jpeg'
   },
   {
     name: 'Late Smt. Ramvati Devi',
@@ -147,7 +147,7 @@ export const FOUNDERS_MEMORIAL = [
     role: 'Guiding Light & Moral Inspiration',
     legacyText: 'The sacred memory and noble spirit in whose venerated honor R.V. Public School was christened. Her lifelong devotion to children’s well-being, boundless maternal compassion for the underprivileged, and passionate advocacy for girls’ education remain the guiding light of our institution.',
     quote: '"When you enlighten the mind of a child with kindness and knowledge, you illuminate generations with grace and dignity."',
-    imageUrl: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=800&auto=format&fit=crop'
+    imageUrl: '/assets/photos/ramvati_devi.jpeg'
   }
 ];
 
@@ -160,7 +160,7 @@ export const LEADERSHIP_MESSAGES = [
     motto: 'Truth Ever Prevails — Satyam Eva Jayate',
     excerpt: 'Fostering academic rigor, disciplined curiosity, and individual care that eliminates any dependency on outside coaching.',
     fullMessage: 'It is a profound privilege to lead this vibrant community of 85+ dedicated teachers and over two thousand eager scholars. Our pedagogical framework guarantees that every child receives thoughtful, individualized attention. Through integrated remedial periods, continuous chapter assessments, and strong parent-school communication, we build enduring self-confidence and deep conceptual understanding.',
-    imageUrl: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=800&auto=format&fit=crop'
+    imageUrl: '/assets/photos/Principal.jpeg'
   },
   {
     id: 'managing-director',
@@ -178,7 +178,7 @@ export const LEADERSHIP_MESSAGES = [
     motto: 'Character Before Success, Values Above All',
     excerpt: 'Our commitment is to nurture disciplined, visionary citizens who respect Indian cultural heritage while achieving modern excellence.',
     fullMessage: 'At R.V. Public School, our mission has never been confined to producing examination rank-holders. We strive to craft upright, courageous, and compassionate human beings. Our 8-acre campus provides the ideal setting where students discover their talents, grounded in moral principles and inspired by intellectual curiosity.',
-    imageUrl: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=800&auto=format&fit=crop'
+    imageUrl: '/assets/photos/chairman.jpeg'
   },
   {
     id: 'vice-chairman',
@@ -187,7 +187,7 @@ export const LEADERSHIP_MESSAGES = [
     motto: 'From Classroom to Career — NEP 2020 Leadership',
     excerpt: 'Bridging foundational schooling with practical future skills through modern science laboratories, computer education, and sports coaching.',
     fullMessage: 'Under our pedagogical roadmap, education transcends the boundaries of prescribed textbooks. Aligned with NEP 2020, we emphasize hands-on laboratory experiments, competitive athletics, and communicative fluency. We ensure that when an RVite completes Class XII, they are fully equipped for prestigious universities and national competitive examinations.',
-    imageUrl: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=800&auto=format&fit=crop'
+    imageUrl: '/assets/photos/vice-chairman.jpeg'
   }
 ];
 
