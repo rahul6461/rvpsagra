@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { Menu, X, GraduationCap, Sparkles, ArrowRight, ShieldCheck } from 'lucide-react';
+import { Menu, X, Sparkles } from 'lucide-react';
 import { SCHOOL_INFO } from '../data/schoolData';
+import { SchoolLogo } from './SchoolLogo';
 
 export const Navbar = ({ onOpenAdmissionModal, activeSection }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -38,13 +39,9 @@ export const Navbar = ({ onOpenAdmissionModal, activeSection }) => {
             onClick={(e) => handleNavClick(e, '#home')}
             className="flex items-center gap-3.5 group cursor-pointer"
           >
-            {/* Official School Crest Logo */}
-            <div className="w-13 h-13 rounded-2xl bg-white p-0.5 shadow-md flex items-center justify-center shrink-0 ring-2 ring-blue-200/80 group-hover:scale-105 transition-transform overflow-hidden">
-              <img
-                src="/assets/rv_logo.svg"
-                alt="RV Public School Logo"
-                className="w-full h-full object-contain"
-              />
+            {/* Un-distorted School Crest Logo */}
+            <div className="w-12 h-12 sm:w-14 sm:h-14 rounded-2xl bg-white p-1 shadow-sm border border-blue-200/80 flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
+              <SchoolLogo className="w-full h-full" />
             </div>
 
             {/* School Title & Affiliation Subtext */}
