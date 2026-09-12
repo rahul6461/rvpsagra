@@ -1,0 +1,5 @@
+# robots.txt for R.V. Public School, Agra
+User-agent: *
+Allow: /
+
+Sitemap: https://rvpsagra.vercel.app/sitemap.xml
