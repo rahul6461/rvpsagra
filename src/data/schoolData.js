@@ -1,6 +1,7 @@
 export const SCHOOL_INFO = {
   name: 'R.V. Public School',
   tagline: 'Empowering Minds, Shaping Futures — 14+ Years of Educational Excellence',
+  establishedDate: '24 May 2012',
   establishedYear: 2012,
   yearsLegacy: 14,
   affiliationNumber: '2131798',
@@ -12,6 +13,8 @@ export const SCHOOL_INFO = {
   medium: 'English Medium',
   type: 'Co-Educational Senior Secondary (10+2)',
   primaryPhone: '+91 7455957545',
+  whatsappNumber: '7455957545',
+  whatsappDisplay: '+91 74559 57545',
   alternatePhone: '+91 9720287545',
   email: 'office@rvpublicschoolagra.com',
   address: 'Garhi Thakur Das, Rohta, Gwalior Road',
@@ -25,6 +28,14 @@ export const SCHOOL_INFO = {
   }
 };
 
+export const CAMPUS_BUILDING_INFO = {
+  title: 'Our School Campus & Modern Infrastructure',
+  location: 'Garhi Thakur Das on Gwalior Road, Agra',
+  establishedDate: '24 May 2012',
+  description: 'R V Public School is a dedicated educational institution located in Garhi Thakur Das on Gwalior Road, Agra. We are committed to fostering academic excellence, personal growth, and strong foundational values in a safe and supportive learning environment. Equipped with modern learning facilities and experienced educators, R V Public School empowers students to achieve their full potential and succeed in an ever-evolving world.',
+  imageUrl: '/assets/photos/campus_building.jpeg'
+};
+
 export const KEY_STATS = [
   {
     id: 'legacy',
@@ -32,7 +43,7 @@ export const KEY_STATS = [
     value: '14+',
     numericTarget: 14,
     suffix: '+',
-    description: 'Founded in 2012 with a visionary commitment to holistic education.',
+    description: 'Founded on 24 May 2012 with a visionary commitment to holistic education.',
     iconName: 'Award'
   },
   {
@@ -97,9 +108,9 @@ export const WHY_CHOOSE_ITEMS = [
   },
   {
     id: 'safe-transport',
-    title: 'Safe GPS-Tracked Bus Fleet',
-    description: 'Extensive school bus fleet covering all Agra & Gwalior Road routes with live GPS, speed governors, and female attendants.',
-    badge: 'Safety First',
+    title: 'Good Connectivity Network for Smooth Transportation',
+    description: 'Good connectivity network for smooth transportation over the city with speed governors and female attendants.',
+    badge: 'City-Wide Transit',
     iconName: 'Bus'
   },
   {
@@ -138,12 +149,12 @@ export const FOUNDERS_MEMORIAL = [
     name: 'Late Sh. Narottam Das',
     title: 'Revered Founder & Visionary Pillar',
     role: 'Founder, RV Educational Trust',
-    legacyText: 'A venerable philanthropist and visionary educational pioneer who laid the foundation stone of RV Educational Trust in 2012. He championed the unyielding conviction that every child in southern Agra and adjoining rural corridors deserves access to high-caliber, affordable, and values-rooted English-medium education.',
+    legacyText: 'A venerable philanthropist and visionary educational pioneer who laid the foundation stone of RV Educational Trust on 24 May 2012. He championed the unyielding conviction that every child in southern Agra and adjoining rural corridors deserves access to high-caliber, affordable, and values-rooted English-medium education.',
     quote: '"True education does not stop at books; it ignites righteous character, moral courage, and selfless devotion to humanity."',
     imageUrl: '/assets/photos/narottam_das.jpeg',
     fullMessage: `Late Sh. Narottam Das, founder of N.D. Educational Trust, envisioned a school in rural southern Agra to provide quality education to children with limited access due to distance and economic constraints.
 
-In the early 2000s, he laid the foundation of RV Public School (2012) with a heartfelt commitment to fulfill his dream and honor the memory of his beloved wife.
+In the early 2000s, he laid the foundation of RV Public School (24 May 2012) with a heartfelt commitment to fulfill his dream and honor the memory of his beloved wife.
 
 Spread across eight acres, the school nurtures holistic growth, encouraging excellence, confidence, and responsible citizenship.
 
@@ -407,7 +418,7 @@ export const TOPPER_STUDENTS = [
     year: '2024 CBSE Board',
     badge: 'District Top Ranker',
     highlightText: '100 in Mathematics, 99 in Computer Science, 98 in Physics. Currently pursuing B.Tech Computer Science.',
-    avatarUrl: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=600&auto=format&fit=crop'
+    avatarUrl: 'https://api.dicebear.com/7.x/adventurer/svg?seed=Ananya&backgroundColor=b6e3f4'
   },
   {
     id: 'topper-2',
@@ -418,7 +429,7 @@ export const TOPPER_STUDENTS = [
     year: '2024 CBSE Board',
     badge: 'City Stream Topper',
     highlightText: '100 in Accountancy, 98 in Economics, 97 in Business Studies. Cleared CA Foundation on first attempt.',
-    avatarUrl: 'https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?q=80&w=600&auto=format&fit=crop'
+    avatarUrl: 'https://api.dicebear.com/7.x/adventurer/svg?seed=Rohan&backgroundColor=ffd5dc'
   },
   {
     id: 'topper-3',
@@ -429,7 +440,7 @@ export const TOPPER_STUDENTS = [
     year: '2024 CBSE Board',
     badge: 'Humanities Star',
     highlightText: '100 in Political Science, 98 in History, 96 in Economics. Admitted to Delhi University Political Science (Hons).',
-    avatarUrl: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=600&auto=format&fit=crop'
+    avatarUrl: 'https://api.dicebear.com/7.x/adventurer/svg?seed=Priya&backgroundColor=c0aede'
   },
   {
     id: 'topper-4',
@@ -440,7 +451,7 @@ export const TOPPER_STUDENTS = [
     year: '2024 CBSE Board',
     badge: 'NEET Merit Rank',
     highlightText: '99 in Biology, 97 in Chemistry, 96 in Physics. Secured MBBS seat in Government Medical College.',
-    avatarUrl: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=600&auto=format&fit=crop'
+    avatarUrl: 'https://api.dicebear.com/7.x/adventurer/svg?seed=Aditya&backgroundColor=d1d4f9'
   },
   {
     id: 'topper-5',
@@ -451,7 +462,7 @@ export const TOPPER_STUDENTS = [
     year: '2024 CBSE Board',
     badge: '100 in Math & Science',
     highlightText: 'Perfect 100 in Standard Mathematics and Science with 98 in Social Science.',
-    avatarUrl: 'https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?q=80&w=600&auto=format&fit=crop'
+    avatarUrl: 'https://api.dicebear.com/7.x/adventurer/svg?seed=Devendra&backgroundColor=ffdfbf'
   },
   {
     id: 'topper-6',
@@ -462,7 +473,7 @@ export const TOPPER_STUDENTS = [
     year: '2024 CBSE Board',
     badge: 'Overall Distinction',
     highlightText: 'Scored 99 in English, 98 in Science, and 97 in Mathematics.',
-    avatarUrl: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=600&auto=format&fit=crop'
+    avatarUrl: 'https://api.dicebear.com/7.x/adventurer/svg?seed=Sneha&backgroundColor=b6e3f4'
   }
 ];
 
@@ -478,13 +489,13 @@ export const SUBJECT_CENTURY_SCORERS = [
 export const FACILITIES_DATA = [
   {
     id: 'fac-transport',
-    title: 'Safe GPS-Tracked School Bus Fleet',
+    title: 'Good Connectivity Network for Smooth Transportation Over the City',
     category: 'Transport & Safety',
     isPrimary: true,
-    shortDesc: 'Comprehensive, dedicated yellow school bus fleet equipped with real-time satellite GPS tracking, speed governors, and verified female attendants covering all major routes across Agra and Gwalior Road.',
+    shortDesc: 'Comprehensive, dedicated school bus fleet providing a good connectivity network for smooth transportation over the city, equipped with speed governors and verified female attendants covering all major routes across Agra and Gwalior Road.',
     specs: [
-      'Real-time satellite GPS tracking with mobile route updates',
-      'Mandatory speed governors (<40 km/h) & emergency SOS button',
+      'Good connectivity network for smooth transportation over the city',
+      'Mandatory speed governors (<40 km/h) & emergency safety measures',
       'Trained female bus conductor & attendant on every route',
       'CCTV cameras & first-aid equipped on all vehicles',
       'Punctual pickup and drop across Rohta, Sevla, Malpura, Saiyan, Tehra & Agra'
@@ -496,9 +507,9 @@ export const FACILITIES_DATA = [
     id: 'fac-smart-classes',
     title: 'Digital Smart Classrooms',
     category: 'Academic',
-    shortDesc: 'Acoustically designed, spacious classrooms equipped with high-resolution interactive digital panels and multimedia lesson modules.',
+    shortDesc: 'Acoustically designed, spacious classrooms equipped with high-resolution interactive digital smart boards and multimedia lesson modules.',
     specs: ['Interactive 75" 4K Smart Panels', 'Rich 3D NCERT curriculum visualizations', 'Ergonomic dual-seating furniture', 'Ample natural cross-ventilation'],
-    imageUrl: 'https://images.unsplash.com/photo-1580582932707-520aed937b7b?q=80&w=800&auto=format&fit=crop',
+    imageUrl: 'https://images.unsplash.com/photo-1580582932707-520aed937b7b?q=80&w=1200&auto=format&fit=crop',
     iconName: 'Monitor'
   },
   {
@@ -514,9 +525,9 @@ export const FACILITIES_DATA = [
     id: 'fac-computer-lab',
     title: 'High-Performance Computer Lab',
     category: 'Labs',
-    shortDesc: 'Modern networked computer systems with high-speed internet and licensed educational software for student programming and research.',
-    specs: ['1:1 Student-to-terminal ratio', 'High-speed dedicated optical fiber network', 'Continuous UPS power backup', 'Firewalled safe educational browsing'],
-    imageUrl: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=800&auto=format&fit=crop',
+    shortDesc: 'Modern networked computer systems placed neatly in lines with high-speed internet and licensed educational software for student programming.',
+    specs: ['Computers placed in neat lines & rows', '1:1 Student-to-terminal ratio', 'Continuous UPS power backup', 'Firewalled safe educational browsing'],
+    imageUrl: 'https://images.unsplash.com/photo-1588196749597-9ff075ee6b5b?q=80&w=1200&auto=format&fit=crop',
     iconName: 'Laptop'
   },
   {
@@ -534,16 +545,16 @@ export const FACILITIES_DATA = [
     category: 'Sports',
     shortDesc: 'Expansive 8-acre championship sports grounds with multi-sport infrastructure for cricket, football, basketball, and track events.',
     specs: ['Natural grass football ground', 'Standard turf cricket pitch & practice nets', '200-meter all-weather athletics track', 'Floodlit volleyball & basketball courts'],
-    imageUrl: 'https://images.unsplash.com/photo-1529900748604-07564a03e7a6?q=80&w=800&auto=format&fit=crop',
+    imageUrl: '/assets/photos/AnnualSportsDay.jpeg',
     iconName: 'Trophy'
   },
   {
     id: 'fac-indoor-sports',
     title: 'Indoor Sports & Fitness Complex',
     category: 'Sports',
-    shortDesc: 'All-weather indoor recreational space for table tennis, chess tournaments, carrom, and martial arts practice.',
-    specs: ['Tournament-grade table tennis tables', 'Badminton court setups', 'FIDE standard chess training boards', 'Yoga & physical fitness sessions'],
-    imageUrl: 'https://images.unsplash.com/photo-1511193311914-0346f16efe90?q=80&w=800&auto=format&fit=crop',
+    shortDesc: 'All-weather indoor recreational space for badminton, table tennis, chess tournaments, carrom, and martial arts practice.',
+    specs: ['Tournament-grade badminton courts & rackets', 'Table tennis & chess stations', 'Carrom & indoor athletics', 'Yoga & physical fitness sessions'],
+    imageUrl: 'https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?q=80&w=1200&auto=format&fit=crop',
     iconName: 'Activity'
   },
   {
@@ -568,9 +579,9 @@ export const FACILITIES_DATA = [
     id: 'fac-water-sanitation',
     title: 'RO Purified Water & Clean Sanitation',
     category: 'Safety',
-    shortDesc: 'Heavy-duty reverse osmosis water purification plants ensuring pure drinking water and spotless gender-segregated washrooms.',
-    specs: ['Multi-stage industrial RO water filtration', 'UV sterilization on all water coolers', 'Dedicated housekeeping team for hygiene', 'Regular cleanliness and sanitary checks'],
-    imageUrl: 'https://images.unsplash.com/photo-1541888946425-d0fbb18086f6?q=80&w=800&auto=format&fit=crop',
+    shortDesc: 'Heavy-duty reverse osmosis water purification plants ensuring fresh, pure drinking water from taps and hygienic restrooms.',
+    specs: ['Multi-stage industrial RO water filtration', 'Pure drinking water from certified taps', 'UV sterilization on all water dispensers', 'Continuous cleanliness and sanitary maintenance'],
+    imageUrl: 'https://images.unsplash.com/photo-1548839140-29a749e1bc4e?q=80&w=1200&auto=format&fit=crop',
     iconName: 'Droplets'
   },
   {
@@ -579,7 +590,7 @@ export const FACILITIES_DATA = [
     category: 'Infrastructure',
     shortDesc: 'Lush green tree-lined grounds equipped with rooftop solar energy installations and rainwater harvesting systems.',
     specs: ['Rooftop solar power array', 'Rainwater harvesting pits', 'Hundreds of trees and floral gardens', 'Clean open-air learning environment'],
-    imageUrl: 'https://images.unsplash.com/photo-1497633762265-9d179a990aa6?q=80&w=800&auto=format&fit=crop',
+    imageUrl: '/assets/photos/EarthDay.jpeg',
     iconName: 'Sun'
   }
 ];
@@ -587,123 +598,164 @@ export const FACILITIES_DATA = [
 export const SCHOOL_ACTIVITIES = [
   {
     id: 'act-sports',
-    title: 'Annual Athletic Championship & Sports Meet',
+    title: 'Annual Sports Day & Athletic Meet',
     category: 'Sports & Athletics',
-    dateOrFrequency: 'Annual December Event',
-    description: 'Track races, cricket tournament, football trophy, and relay championships held across our sprawling 8-acre grounds with hundreds of parent spectators.',
-    badge: 'Championship',
-    imageUrl: 'https://images.unsplash.com/photo-1461896836934-ffe607ba8211?q=80&w=800&auto=format&fit=crop'
+    dateOrFrequency: 'Annual Sports Meet',
+    description: 'Track races, cricket championships, football trophies, and athletic drills held on our 8-acre sports grounds with spirited participation.',
+    badge: 'Athletics Meet',
+    imageUrl: '/assets/photos/AnnualSportsDay.jpeg'
   },
   {
     id: 'act-science-exhibition',
-    title: 'Annual Science & Innovation Fair',
+    title: 'Annual Science & Innovation Day',
     category: 'Science & Academics',
-    dateOrFrequency: 'Term-End Exhibition',
-    description: 'Students present working models in Physics, Chemistry, renewable energy, and eco-friendly solutions evaluated by visiting guest professors.',
-    badge: 'Science Fair',
-    imageUrl: 'https://images.unsplash.com/photo-1532094349884-543bc11b234d?q=80&w=800&auto=format&fit=crop'
+    dateOrFrequency: 'Annual Exhibition',
+    description: 'Students present working scientific models, renewable energy innovations, and experimental exhibits evaluated by visiting educators.',
+    badge: 'Innovation Day',
+    imageUrl: '/assets/photos/AnnualInnovationDay.jpeg'
   },
   {
     id: 'act-arts',
-    title: 'Art, Rangoli & Cultural Celebrations',
+    title: 'Diwali Celebration & Rangoli Art',
     category: 'Arts & Culture',
-    dateOrFrequency: 'Festivals & Competitions',
-    description: 'Vibrant cultural showcases during Diwali, Independence Day, and Republic Day featuring classical dance, patriotic songs, and artistic displays.',
-    badge: 'Cultural Conclave',
-    imageUrl: 'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=800&auto=format&fit=crop'
+    dateOrFrequency: 'Diwali Celebration',
+    description: 'Vibrant Diwali celebrations showcasing colorful handcrafted rangoli designs, artistic displays, and cultural festivities by students.',
+    badge: 'Diwali Rangoli',
+    imageUrl: '/assets/photos/gallery_rangoli.jpeg'
   },
   {
-    id: 'act-debate',
-    title: 'Literary Club, Debate & Elocution',
+    id: 'act-awards',
+    title: 'Annual Award Distribution Ceremony',
     category: 'Leadership & Civic',
-    dateOrFrequency: 'Monthly Inter-Class Sessions',
-    description: 'English and Hindi debates on current affairs, public speaking clinics, and creative writing workshops developing stage confidence.',
-    badge: 'Literary Excellence',
-    imageUrl: 'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=800&auto=format&fit=crop'
+    dateOrFrequency: 'Annual Felicitation',
+    description: 'Felicitation ceremony honoring academic board toppers, subject centum scorers, sports medalists, and exemplary student leaders.',
+    badge: 'Merit Honors',
+    imageUrl: '/assets/photos/AwardDistribution.jpeg'
   },
   {
     id: 'act-yoga',
-    title: 'Morning Yoga, Wellness & Discipline',
+    title: 'International Yoga Day & Wellness Assembly',
     category: 'Health & Wellness',
-    dateOrFrequency: 'Daily Morning Routine',
-    description: 'Mindfulness breathing, Surya Namaskar, and physical fitness conditioning incorporated into morning assemblies for concentration and calm.',
-    badge: 'Daily Wellness',
-    imageUrl: 'https://images.unsplash.com/photo-1545205597-3d9d02c29597?q=80&w=800&auto=format&fit=crop'
+    dateOrFrequency: 'Daily & Annual Event',
+    description: 'Mindfulness breathing, Surya Namaskar, and physical conditioning practiced during morning assemblies to foster calm and discipline.',
+    badge: 'Yoga Day',
+    imageUrl: '/assets/photos/InternationalYogaDay.jpeg'
   },
   {
     id: 'act-republic-day',
-    title: 'National Days & Patriotic Parades',
+    title: 'Independence Day & Patriotic Celebrations',
     category: 'Leadership & Civic',
-    dateOrFrequency: 'August 15 & January 26',
-    description: 'Grand flag hoisting ceremonies, marching band parades, patriotic recitations, and inspiring tributes honoring India’s freedom heroes.',
+    dateOrFrequency: 'National Day',
+    description: 'Grand flag hoisting ceremony, marching parades, patriotic recitations, and tributes honoring India’s heritage and freedom heroes.',
     badge: 'National Pride',
-    imageUrl: 'https://images.unsplash.com/photo-1532375810709-75b1da00537c?q=80&w=800&auto=format&fit=crop'
+    imageUrl: '/assets/photos/IndependenceDay.jpeg'
+  },
+  {
+    id: 'act-clean-india',
+    title: 'Clean India, Green India (Swachh Bharat) Drive',
+    category: 'Leadership & Civic',
+    dateOrFrequency: 'Community Action',
+    description: 'Student-led campus cleanliness drives and awareness rallies instilling strong civic responsibility and environmental hygiene.',
+    badge: 'Swachh Bharat',
+    imageUrl: '/assets/photos/CleanIndiaGreenIndia.jpeg'
+  },
+  {
+    id: 'act-earth-day',
+    title: 'Earth Day Celebration & Tree Plantation',
+    category: 'Leadership & Civic',
+    dateOrFrequency: 'Earth Day Drive',
+    description: 'Hands-on sapling plantation drives and conservation workshops conducted across our 8-acre eco-friendly campus.',
+    badge: 'Eco Initiative',
+    imageUrl: '/assets/photos/EarthDay.jpeg'
+  },
+  {
+    id: 'act-ima-tour',
+    title: 'Leadership Tour to IMA Dehradun',
+    category: 'Academics & Tours',
+    dateOrFrequency: 'Educational Excursion',
+    description: 'Senior students leadership excursion to the prestigious Indian Military Academy (IMA) in Dehradun for character and career inspiration.',
+    badge: 'IMA Tour',
+    imageUrl: '/assets/photos/IMADehradunTour.jpeg'
   }
 ];
 
 export const GALLERY_ITEMS = [
   {
-    id: 'gal-1',
-    title: 'Main Academic Campus & Courtyard',
-    category: 'Campus & Infra',
-    imageUrl: 'https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=1000&auto=format&fit=crop',
-    description: 'View of the primary administrative and academic blocks amidst verdant landscaped gardens.'
-  },
-  {
-    id: 'gal-2',
-    title: 'Smart Digital Classroom Session',
-    category: 'Campus & Infra',
-    imageUrl: 'https://images.unsplash.com/photo-1580582932707-520aed937b7b?q=80&w=1000&auto=format&fit=crop',
-    description: 'Students engaged in interactive digital visual learning with certified faculty.'
-  },
-  {
-    id: 'gal-3',
-    title: 'Chemistry Laboratory Experiments',
-    category: 'Science & Labs',
-    imageUrl: 'https://images.unsplash.com/photo-1532094349884-543bc11b234d?q=80&w=1000&auto=format&fit=crop',
-    description: 'Senior Secondary chemistry scholars performing qualitative analysis practicals.'
-  },
-  {
-    id: 'gal-4',
-    title: 'Annual Football Tournament',
-    category: 'Sports & Athletics',
-    imageUrl: 'https://images.unsplash.com/photo-1529900748604-07564a03e7a6?q=80&w=1000&auto=format&fit=crop',
-    description: 'Inter-school football match played on our sprawling natural turf athletic arena.'
-  },
-  {
-    id: 'gal-5',
-    title: 'High-Speed Computer Terminal Lab',
-    category: 'Science & Labs',
-    imageUrl: 'https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=1000&auto=format&fit=crop',
-    description: 'Dedicated computer lab where students practice Python, coding, and computational logic.'
-  },
-  {
-    id: 'gal-6',
-    title: 'Independence Day Cultural Gala',
+    id: 'gal-diwali',
+    title: 'Diwali Celebration & Rangoli Art',
     category: 'Celebrations & Festivals',
-    imageUrl: 'https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=1000&auto=format&fit=crop',
-    description: 'Traditional dance and musical performance presented by senior secondary girls.'
+    imageUrl: '/assets/photos/gallery_rangoli.jpeg',
+    description: 'Spectacular student handcrafted rangoli designs and traditional festivities celebrating the spirit of Diwali.'
   },
   {
-    id: 'gal-7',
-    title: 'Safe GPS-Tracked School Bus Fleet',
-    category: 'Campus & Infra',
-    imageUrl: 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?q=80&w=1000&auto=format&fit=crop',
-    description: 'Yellow bus fleet lined up at the campus transport terminal for secure student transit.'
-  },
-  {
-    id: 'gal-8',
-    title: 'Resource Library & Reading Room',
-    category: 'Campus & Infra',
-    imageUrl: 'https://images.unsplash.com/photo-1521587760476-6c12a4b040da?q=80&w=1000&auto=format&fit=crop',
-    description: 'Scholars researching reference books and journals in the peaceful central library.'
-  },
-  {
-    id: 'gal-9',
-    title: 'Annual Sports Medal Ceremony',
+    id: 'gal-sports',
+    title: 'Annual Sports Day & Athletic Meet',
     category: 'Sports & Athletics',
-    imageUrl: 'https://images.unsplash.com/photo-1461896836934-ffe607ba8211?q=80&w=1000&auto=format&fit=crop',
-    description: 'Honoring track event winners and sports stars with gold trophies and merit certificates.'
+    imageUrl: '/assets/photos/AnnualSportsDay.jpeg',
+    description: 'Track events, sprint races, and athletics competitions held on the 8-acre school grounds.'
+  },
+  {
+    id: 'gal-award',
+    title: 'Annual Award Distribution & Felicitation',
+    category: 'Celebrations & Festivals',
+    imageUrl: '/assets/photos/AwardDistribution.jpeg',
+    description: 'Honoring academic toppers, subject distinction holders, and sports medalists.'
+  },
+  {
+    id: 'gal-innovation',
+    title: 'Annual Science & Innovation Day',
+    category: 'Science & Labs',
+    imageUrl: '/assets/photos/AnnualInnovationDay.jpeg',
+    description: 'Student-designed working models, technological projects, and eco-innovations on display.'
+  },
+  {
+    id: 'gal-independence',
+    title: 'Independence Day Patriotic Celebrations',
+    category: 'Celebrations & Festivals',
+    imageUrl: '/assets/photos/IndependenceDay.jpeg',
+    description: 'Tricolor flag hoisting ceremony, parade salutes, and patriotic cultural presentations.'
+  },
+  {
+    id: 'gal-yoga',
+    title: 'International Yoga Day Assembly',
+    category: 'Sports & Athletics',
+    imageUrl: '/assets/photos/InternationalYogaDay.jpeg',
+    description: 'Mass yoga posture practice, pranayama, and mindful wellness routines by students and teachers.'
+  },
+  {
+    id: 'gal-clean-india',
+    title: 'Clean India Green India Campaign',
+    category: 'Campus & Infra',
+    imageUrl: '/assets/photos/CleanIndiaGreenIndia.jpeg',
+    description: 'Student awareness rally and campus cleanliness drive under the Swachh Bharat mission.'
+  },
+  {
+    id: 'gal-earth-day',
+    title: 'Earth Day Tree Plantation Drive',
+    category: 'Campus & Infra',
+    imageUrl: '/assets/photos/EarthDay.jpeg',
+    description: 'Tree plantation and environmental care activities preserving our green 8-acre campus.'
+  },
+  {
+    id: 'gal-ima-tour',
+    title: 'Educational Tour to IMA Dehradun',
+    category: 'Campus & Infra',
+    imageUrl: '/assets/photos/IMADehradunTour.jpeg',
+    description: 'Senior students exploring the Indian Military Academy in Dehradun for leadership orientation.'
+  },
+  {
+    id: 'gal-campus',
+    title: 'R.V. Public School Campus Building',
+    category: 'Campus & Infra',
+    imageUrl: '/assets/photos/campus_building.jpeg',
+    description: 'Modern school building and academic facilities located at Garhi Thakur Das, Gwalior Road, Agra.'
+  },
+  {
+    id: 'gal-prospectus',
+    title: 'Official School Prospectus & Brochure',
+    category: 'Campus & Infra',
+    imageUrl: '/assets/photos/Prospectus.jpeg',
+    description: 'Academic overview and admission guidelines for parents and prospective students.'
   }
 ];
 
@@ -713,43 +765,47 @@ export const TESTIMONIALS = [
     author: 'Dr. Rakesh Agrawal',
     role: 'Parent of Class XII Science Scholar',
     wardGrade: 'Father of Ananya Agrawal (CBSE 98.2%)',
+    gender: 'male',
+    genderLabel: 'Father',
     quote: 'The academic dedication at R.V. Public School is exemplary. The teachers took total ownership of my daughter’s preparation so that she never needed a single hour of private tuition. She scored 98.2% and gained admission to top engineering studies.',
-    rating: 5,
-    avatarUrl: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=300&auto=format&fit=crop'
+    rating: 5
   },
   {
     id: 'test-2',
     author: 'Sunita Kushwaha',
     role: 'Parent of Class X Student',
     wardGrade: 'Mother of Yash Kushwaha',
-    quote: 'As parents living near Sevla on Gwalior Road, student safety was our topmost priority. The GPS bus facility with female attendants gives us complete peace of mind every single morning. The discipline and moral values taught here are unmatched.',
-    rating: 5,
-    avatarUrl: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=300&auto=format&fit=crop'
+    gender: 'female',
+    genderLabel: 'Mother',
+    quote: 'As parents living near Sevla on Gwalior Road, student safety was our topmost priority. The school transport facility with good connectivity network for smooth transportation over the city and female attendants gives us complete peace of mind every single morning. The discipline and moral values taught here are unmatched.',
+    rating: 5
   },
   {
     id: 'test-3',
     author: 'Vikramaditya Sharma',
     role: 'Alumnus (Batch 2021) — CA Finalist',
     wardGrade: 'Former Commerce Stream Topper',
+    gender: 'male',
+    genderLabel: 'Alumnus',
     quote: 'The commerce faculty at RVPS laid a rock-solid conceptual foundation in Accountancy and Economics. The mentors encouraged analytical reasoning over rote learning. It helped me clear CA Foundation and Intermediate in my very first attempt.',
-    rating: 5,
-    avatarUrl: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=300&auto=format&fit=crop'
+    rating: 5
   },
   {
     id: 'test-4',
     author: 'Meenakshi Verma',
     role: 'Parent of Primary Students',
     wardGrade: 'Mother of Aarav & Anvi (Class III & V)',
+    gender: 'female',
+    genderLabel: 'Mother',
     quote: 'The teachers are affectionate, attentive, and genuinely care about each child’s emotional and academic progress. My children love coming to school every morning, especially the green open playground and interactive smart classes.',
-    rating: 5,
-    avatarUrl: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=300&auto=format&fit=crop'
+    rating: 5
   }
 ];
 
 export const FAQS_DATA = [
   {
     id: 'faq-1',
-    question: 'What is the admission procedure for Nursery to Class XII for 2025–26?',
+    question: 'What is the admission procedure for Nursery to Class XII for 2026–27?',
     answer: 'Admissions are open for Nursery through Class XII. Parents can submit the online enquiry form on this portal or collect the registration prospectus from the school administrative desk. For pre-primary, an informal parent-child interaction is scheduled. For Classes I to IX & XI, a diagnostic review of previous records and basic readiness takes place.',
     category: 'Admissions'
   },
@@ -761,8 +817,8 @@ export const FAQS_DATA = [
   },
   {
     id: 'faq-3',
-    question: 'Does the school provide safe GPS-tracked bus transport across Agra?',
-    answer: 'Yes. R.V. Public School operates an extensive fleet of GPS-tracked yellow school buses equipped with mandatory speed governors (<40 km/h), fire extinguishers, first-aid kits, and trained female attendants covering Rohta, Sevla, Gwalior Highway, Saiyan, Tehra, Malpura, and major Agra city sectors.',
+    question: 'Does the school provide transport with a good connectivity network over the city?',
+    answer: 'Yes. R.V. Public School operates a dedicated school bus fleet offering a good connectivity network for smooth transportation over the city, equipped with speed governors (<40 km/h), fire extinguishers, first-aid kits, and trained female attendants covering Rohta, Sevla, Gwalior Highway, Saiyan, Tehra, Malpura, and major Agra city sectors.',
     category: 'Transportation'
   },
   {
@@ -817,10 +873,10 @@ export const ADMISSION_STEPS = [
 ];
 
 export const AGE_CRITERIA_TABLE = [
-  { grade: 'Nursery', minimumAge: '3+ Years as on 31st March 2025' },
-  { grade: 'LKG (Lower Kindergarten)', minimumAge: '4+ Years as on 31st March 2025' },
-  { grade: 'UKG (Upper Kindergarten)', minimumAge: '5+ Years as on 31st March 2025' },
-  { grade: 'Class I', minimumAge: '6+ Years (As per NEP 2020 Guidelines)' },
+  { grade: 'Nursery', minimumAge: '3+ Years as on 31st March 2026' },
+  { grade: 'LKG (Lower Kindergarten)', minimumAge: '4+ Years as on 31st March 2026' },
+  { grade: 'UKG (Upper Kindergarten)', minimumAge: '5+ Years as on 31st March 2026' },
+  { grade: 'Class I', minimumAge: '6+ Years as on 31st March 2026 (NEP 2020 Guidelines)' },
   { grade: 'Class II to XII', minimumAge: 'Based on successful completion of previous class' }
 ];
 

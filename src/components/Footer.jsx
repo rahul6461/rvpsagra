@@ -18,19 +18,20 @@ export const Footer = ({ onOpenAdmissionModal }) => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-12 border-b border-slate-800/80">
           {/* Col 1: Institutional Identity & CBSE Accreditation (4 cols) */}
           <div className="lg:col-span-4 space-y-4">
-            <div className="flex items-center gap-3">
-              <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-blue-700 to-sky-500 p-0.5 shadow-md flex items-center justify-center shrink-0">
-                <div className="w-full h-full bg-slate-950 rounded-[14px] flex flex-col items-center justify-center text-sky-400">
-                  <span className="font-extrabold text-lg leading-none font-serif">RV</span>
-                  <span className="text-[9px] uppercase tracking-widest font-bold text-sky-300">PS</span>
-                </div>
+            <div className="flex items-center gap-3.5">
+              <div className="w-14 h-14 rounded-2xl bg-white p-1 shadow-md flex items-center justify-center shrink-0 ring-2 ring-blue-500/50 overflow-hidden">
+                <img
+                  src="/assets/rv_logo.svg"
+                  alt="RV Public School Logo"
+                  className="w-full h-full object-contain"
+                />
               </div>
 
               <div>
                 <h3 className="text-xl font-bold font-serif text-white tracking-tight">
                   R.V. Public School
                 </h3>
-                <div className="text-xs text-sky-400 font-semibold">Agra, Uttar Pradesh</div>
+                <div className="text-xs text-sky-400 font-semibold">Agra, Uttar Pradesh • Estd. 2012</div>
               </div>
             </div>
 
@@ -65,10 +66,10 @@ export const Footer = ({ onOpenAdmissionModal }) => {
                 { name: 'About School & Founders', id: 'about' },
                 { name: 'Academics & CBSE Streams', id: 'academics' },
                 { name: 'Board Examination Toppers', id: 'toppers' },
-                { name: 'Safe Bus Fleet & Facilities', id: 'facilities' },
+                { name: 'Campus Facilities & Transportation', id: 'facilities' },
                 { name: 'Co-Curricular & Student Life', id: 'activities' },
                 { name: 'Campus Photo Gallery', id: 'gallery' },
-                { name: 'Admission Guidelines 2025–26', id: 'admissions' },
+                { name: 'Admission Guidelines 2026–27', id: 'admissions' },
                 { name: 'Campus Location & Contact', id: 'contact' },
               ].map((link, idx) => (
                 <li key={idx}>

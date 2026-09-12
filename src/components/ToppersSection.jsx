@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Award, Trophy, Star, Sparkles, CheckCircle2 } from 'lucide-react';
 import { TOPPER_STUDENTS, SUBJECT_CENTURY_SCORERS } from '../data/schoolData';
 import { ImageWithFallback } from './ImageWithFallback';
+import { CountUpNumber } from './CountUpNumber';
 
 export const ToppersSection = () => {
   const [filter, setFilter] = useState('ALL');
@@ -104,7 +105,12 @@ export const ToppersSection = () => {
                   <div>
                     <span className="text-xs font-bold text-slate-500 uppercase tracking-wider">Overall Aggregate</span>
                     <div className="text-2xl sm:text-3xl font-extrabold text-blue-900 font-serif">
-                      {topper.percentage}%
+                      <CountUpNumber
+                        target={topper.percentage}
+                        decimals={1}
+                        suffix="%"
+                        duration={1800}
+                      />
                     </div>
                   </div>
                   <div className="w-10 h-10 rounded-xl bg-white border border-blue-200 text-amber-500 flex items-center justify-center shadow-xs">

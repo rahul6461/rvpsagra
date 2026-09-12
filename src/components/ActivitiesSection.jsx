@@ -34,7 +34,7 @@ export const ActivitiesSection = () => {
                   <ImageWithFallback
                     src={act.imageUrl}
                     alt={act.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
                   />
                   <div className="absolute top-3 left-3 px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-wider bg-white/95 text-blue-900 backdrop-blur-xs shadow-xs">
                     {act.category}

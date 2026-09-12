@@ -1,6 +1,7 @@
 import React from 'react';
 import { Award, GraduationCap, CheckCircle2, MapPin, Users } from 'lucide-react';
 import { KEY_STATS } from '../data/schoolData';
+import { CountUpNumber } from './CountUpNumber';
 
 export const StatCounter = () => {
   const getIcon = (iconName) => {
@@ -28,7 +29,11 @@ export const StatCounter = () => {
             </div>
 
             <div className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-blue-900 font-serif tracking-tight">
-              {stat.value}
+              <CountUpNumber
+                target={stat.numericTarget || parseInt(stat.value, 10)}
+                suffix={stat.suffix || ''}
+                duration={2200}
+              />
             </div>
 
             <div className="text-xs sm:text-sm font-bold text-slate-800 mt-1">

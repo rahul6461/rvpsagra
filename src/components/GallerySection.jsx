@@ -77,7 +77,7 @@ export const GallerySection = () => {
                 <ImageWithFallback
                   src={item.imageUrl}
                   alt={item.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-slate-950/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
                   <div className="p-3 rounded-full bg-white/90 text-blue-900 shadow-lg transform translate-y-2 group-hover:translate-y-0 transition-transform">

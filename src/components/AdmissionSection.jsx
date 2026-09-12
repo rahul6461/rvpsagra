@@ -28,7 +28,7 @@ export const AdmissionSection = ({ onOpenAdmissionModal }) => {
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-blue-50 border border-blue-200 text-blue-800 text-xs font-bold uppercase tracking-wider mb-3">
             <Sparkles className="w-3.5 h-3.5 text-blue-600" />
-            <span>Admissions 2025–26</span>
+            <span>Admissions 2026–27</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight font-serif">
             Enrollment & Admission Pathway
@@ -82,7 +82,7 @@ export const AdmissionSection = ({ onOpenAdmissionModal }) => {
           <div className="lg:col-span-5 space-y-6">
             <div className="bg-slate-50 rounded-3xl p-6 sm:p-8 border border-blue-100">
               <span className="text-xs font-bold uppercase tracking-wider text-blue-700 block mb-2">
-                Age Eligibility Criteria
+                Age Eligibility Criteria (Session 2026–2027)
               </span>
               <h3 className="text-xl font-bold text-slate-900 font-serif mb-4">
                 Class Readiness & Age Norms
@@ -98,7 +98,7 @@ export const AdmissionSection = ({ onOpenAdmissionModal }) => {
               </div>
 
               <div className="mt-4 pt-3 border-t border-slate-200 text-[11px] text-slate-500">
-                * Age calculated as per New Education Policy (NEP 2020) norms.
+                * Age calculated as on 31st March 2026 as per New Education Policy (NEP 2020) norms.
               </div>
             </div>
 
@@ -276,14 +276,14 @@ export const AdmissionSection = ({ onOpenAdmissionModal }) => {
 
                   <div>
                     <label className="block text-xs font-bold text-slate-700 mb-1">
-                      Requires Safe GPS Bus Transport?
+                      Smooth City Transportation Network?
                     </label>
                     <select
                       value={formData.needsTransport}
                       onChange={(e) => setFormData({ ...formData, needsTransport: e.target.value })}
                       className="w-full px-3 py-2.5 rounded-xl border border-slate-200 focus:border-blue-500 focus:ring-2 focus:ring-blue-100 text-xs sm:text-sm outline-hidden bg-white"
                     >
-                      <option value="yes">Yes — Safe GPS Bus Facility Required</option>
+                      <option value="yes">Yes — Good Connectivity Bus Network Required</option>
                       <option value="no">No — Self Conveyance</option>
                     </select>
                   </div>

@@ -116,10 +116,10 @@ export const ContactSection = () => {
               </div>
               <div>
                 <span className="text-[11px] font-bold uppercase text-blue-900 block">
-                  Safe GPS Bus Fleet Helpdesk
+                  Smooth Transportation Network Helpdesk
                 </span>
                 <span className="text-xs text-slate-600">
-                  Route coordination & live vehicle status: <strong className="text-blue-900">{SCHOOL_INFO.primaryPhone}</strong>
+                  Good connectivity network over the city: <strong className="text-blue-900">{SCHOOL_INFO.primaryPhone}</strong>
                 </span>
               </div>
             </div>

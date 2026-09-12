@@ -59,20 +59,20 @@ export const FacilitiesSection = () => {
             <span>Infrastructure & Facilities</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight font-serif">
-            World-Class Campus Infrastructure & Safe Transport
+            World-Class Campus Infrastructure & Transportation Network
           </h2>
           <p className="mt-4 text-base sm:text-lg text-slate-600">
-            Featuring our premiere Safe GPS-Tracked Bus Fleet, Agra’s largest 8-acre championship sports grounds, digital smart classrooms, and modern science laboratories.
+            Featuring our good connectivity network for smooth transportation over the city, Agra’s largest 8-acre championship sports grounds, digital smart classrooms, and modern science laboratories.
           </p>
         </div>
 
         {/* ========================================================================= */}
-        {/* PREMIER FEATURE: SAFE GPS-TRACKED SCHOOL BUS FLEET SPOTLIGHT              */}
+        {/* PREMIER FEATURE: GOOD CONNECTIVITY NETWORK BUS FLEET SPOTLIGHT            */}
         {/* ========================================================================= */}
         <div className="mb-16 bg-white rounded-3xl p-6 sm:p-10 border-2 border-blue-300 shadow-xl overflow-hidden relative">
           <div className="absolute top-0 right-0 bg-gradient-to-l from-blue-700 to-blue-600 text-white text-xs font-bold px-4 py-1.5 rounded-bl-2xl uppercase tracking-wider flex items-center gap-1.5 shadow-sm">
             <ShieldCheck className="w-3.5 h-3.5 text-sky-200" />
-            <span>Primary Campus Feature • Safe Commute</span>
+            <span>Primary Campus Feature • Smooth Transportation</span>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center pt-2">
@@ -81,7 +81,7 @@ export const FacilitiesSection = () => {
               <div className="relative rounded-2xl overflow-hidden shadow-lg border border-blue-100 group">
                 <ImageWithFallback
                   src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?q=80&w=1200&auto=format&fit=crop"
-                  alt="Safe GPS-Tracked School Bus Fleet"
+                  alt="Good Connectivity Network for Smooth Transportation"
                   className="w-full h-72 sm:h-84 object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-transparent to-transparent flex items-end p-6">
@@ -90,7 +90,7 @@ export const FacilitiesSection = () => {
                       Comprehensive Agra & Highway Coverage
                     </div>
                     <div className="text-xl font-bold font-serif">
-                      Dedicated GPS Yellow Bus Fleet
+                      Good Connectivity Network for Smooth Transportation Over the City
                     </div>
                   </div>
                 </div>
@@ -100,7 +100,7 @@ export const FacilitiesSection = () => {
               <div className="grid grid-cols-3 gap-3 mt-4 text-center">
                 <div className="p-3 bg-blue-50/70 rounded-xl border border-blue-100">
                   <div className="text-lg font-bold text-blue-900 font-serif">100%</div>
-                  <div className="text-[11px] text-slate-600 font-medium">GPS Tracked</div>
+                  <div className="text-[11px] text-slate-600 font-medium">City Coverage</div>
                 </div>
                 <div className="p-3 bg-blue-50/70 rounded-xl border border-blue-100">
                   <div className="text-lg font-bold text-blue-900 font-serif">&lt;40 km/h</div>
@@ -118,24 +118,24 @@ export const FacilitiesSection = () => {
               <div>
                 <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-100 text-blue-800 text-xs font-bold uppercase tracking-wider mb-2">
                   <Bus className="w-3.5 h-3.5 text-blue-700" />
-                  <span>Safe GPS-Tracked Bus Fleet</span>
+                  <span>Smooth Transportation Network</span>
                 </div>
                 <h3 className="text-2xl sm:text-3xl font-bold text-slate-900 font-serif">
-                  Safe, Punctual & GPS-Monitored Student Transport
+                  Good Connectivity Network for Smooth Transportation Over the City
                 </h3>
                 <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mt-2">
-                  R.V. Public School provides a modern yellow school bus network covering all key corridors across Southern Agra, Rohta, Sevla, Malpura, and the Gwalior Highway corridor. Every bus is equipped with satellite tracking and mandatory safety equipment to ensure total peace of mind for parents.
+                  R.V. Public School provides a dedicated yellow school bus network offering a good connectivity network for smooth transportation over the city, covering all key corridors across Southern Agra, Rohta, Sevla, Malpura, and the Gwalior Highway corridor with verified female attendants to ensure total peace of mind for parents.
                 </p>
               </div>
 
               {/* Safety Specs list */}
               <div className="space-y-2.5">
                 {[
-                  'Live satellite GPS tracking with real-time route updates',
+                  'Good connectivity network for smooth transportation over the city',
                   'Strict speed governor limit (<40 km/h) on all vehicles',
                   'Trained female bus conductor & attendant on every route',
                   'Dedicated transport coordinator helpline for immediate updates',
-                  'Routine breathalyzer checks and certified licensed drivers'
+                  'Routine safety checks and certified licensed drivers'
                 ].map((spec, sIdx) => (
                   <div key={sIdx} className="flex items-start gap-2.5 text-xs sm:text-sm font-medium text-slate-800">
                     <CheckCircle className="w-4 h-4 text-blue-600 shrink-0 mt-0.5" />

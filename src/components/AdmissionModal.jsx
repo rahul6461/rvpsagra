@@ -36,22 +36,31 @@ export const AdmissionModal = ({ isOpen, onClose }) => {
       >
         {/* Header */}
         <div className="flex items-start justify-between pb-4 border-b border-blue-100">
-          <div>
-            <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-blue-50 border border-blue-200 text-blue-800 text-[11px] font-bold uppercase tracking-wider mb-1.5">
-              <Sparkles className="w-3 h-3 text-blue-600" />
-              <span>Admissions 2025–26</span>
+          <div className="flex items-center gap-3">
+            <div className="w-12 h-12 rounded-2xl bg-white p-0.5 shadow-sm border border-blue-200 shrink-0 overflow-hidden">
+              <img
+                src="/assets/rv_logo.svg"
+                alt="RV Public School Logo"
+                className="w-full h-full object-contain"
+              />
             </div>
-            <h3 className="text-xl sm:text-2xl font-bold font-serif text-slate-900">
-              Admission Enquiry Desk
-            </h3>
-            <p className="text-xs text-slate-500 mt-0.5">
-              CBSE Affiliated Senior Secondary (10+2) • Agra
-            </p>
+            <div>
+              <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-blue-50 border border-blue-200 text-blue-800 text-[11px] font-bold uppercase tracking-wider mb-1">
+                <Sparkles className="w-3 h-3 text-blue-600" />
+                <span>Admissions 2026–27</span>
+              </div>
+              <h3 className="text-xl sm:text-2xl font-bold font-serif text-slate-900">
+                Admission Enquiry Desk
+              </h3>
+              <p className="text-xs text-slate-500 mt-0.5">
+                CBSE Affiliated Senior Secondary (10+2) • Agra
+              </p>
+            </div>
           </div>
 
           <button
             onClick={handleResetAndClose}
-            className="w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-600 flex items-center justify-center font-bold transition-colors cursor-pointer"
+            className="w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-600 flex items-center justify-center font-bold transition-colors cursor-pointer shrink-0"
           >
             <X className="w-4 h-4" />
           </button>
@@ -168,7 +177,7 @@ export const AdmissionModal = ({ isOpen, onClose }) => {
 
               <div>
                 <label className="block text-xs font-bold text-slate-700 mb-1">
-                  Safe GPS Bus Transport?
+                  Good City Transportation Network?
                 </label>
                 <select
                   value={formData.needsBus}

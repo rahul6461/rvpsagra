@@ -1,0 +1,121 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <!-- Top Text Arc -->
+    <path id="textArcTop" d="M 90,250 A 160,160 0 0,1 410,250" fill="none" />
+    <!-- Bottom Left Text Arc -->
+    <path id="textArcBottomLeft" d="M 86,230 A 165,165 0 0,0 155,360" fill="none" />
+    <!-- Bottom Right Text Arc -->
+    <path id="textArcBottomRight" d="M 345,360 A 165,165 0 0,0 414,230" fill="none" />
+    <!-- Ribbon Arc for motto -->
+    <path id="ribbonArc" d="M 105,426 Q 250,458 395,426" fill="none" />
+  </defs>
+
+  <!-- Laurel Wreath: Left Branch (Golden Orange #EB811B) -->
+  <g fill="#EB811B" stroke="#C86A0E" stroke-width="0.75">
+    <!-- Left wreath leaves -->
+    <path d="M 115,62 C 100,55 90,70 102,80 C 112,88 122,78 115,62 Z" />
+    <path d="M 85,82 C 72,78 65,95 78,105 C 88,112 98,100 85,82 Z" />
+    <path d="M 62,110 C 48,108 45,126 58,136 C 68,144 78,130 62,110 Z" />
+    <path d="M 45,145 C 32,145 30,164 45,172 C 56,178 64,162 45,145 Z" />
+    <path d="M 34,185 C 22,188 22,207 37,214 C 49,218 55,202 34,185 Z" />
+    <path d="M 28,228 C 18,233 19,252 35,257 C 47,260 52,244 28,228 Z" />
+    <path d="M 30,272 C 20,279 23,298 39,301 C 51,303 54,286 30,272 Z" />
+    <path d="M 39,315 C 31,324 36,343 52,343 C 64,343 64,326 39,315 Z" />
+    <path d="M 56,355 C 50,366 58,384 75,380 C 86,378 83,361 56,355 Z" />
+    <!-- Inner leaves left -->
+    <path d="M 108,95 C 98,90 92,105 102,112 C 111,118 118,107 108,95 Z" />
+    <path d="M 85,128 C 76,124 72,138 82,145 C 90,150 97,139 85,128 Z" />
+    <path d="M 68,166 C 60,163 58,177 68,184 C 76,189 82,177 68,166 Z" />
+    <path d="M 58,206 C 50,205 50,219 60,225 C 68,229 73,217 58,206 Z" />
+    <path d="M 55,248 C 48,249 49,263 59,267 C 67,270 71,258 55,248 Z" />
+    <path d="M 60,290 C 54,293 57,307 67,309 C 75,311 77,299 60,290 Z" />
+  </g>
+
+  <!-- Laurel Wreath: Right Branch (Golden Orange #EB811B) -->
+  <g fill="#EB811B" stroke="#C86A0E" stroke-width="0.75">
+    <!-- Right wreath leaves -->
+    <path d="M 385,62 C 400,55 410,70 398,80 C 388,88 378,78 385,62 Z" />
+    <path d="M 415,82 C 428,78 435,95 422,105 C 412,112 402,100 415,82 Z" />
+    <path d="M 438,110 C 452,108 455,126 442,136 C 432,144 422,130 438,110 Z" />
+    <path d="M 455,145 C 468,145 470,164 455,172 C 444,178 436,162 455,145 Z" />
+    <path d="M 466,185 C 478,188 478,207 463,214 C 451,218 445,202 466,185 Z" />
+    <path d="M 472,228 C 482,233 481,252 465,257 C 453,260 448,244 472,228 Z" />
+    <path d="M 470,272 C 480,279 477,298 461,301 C 449,303 446,286 470,272 Z" />
+    <path d="M 461,315 C 469,324 464,343 448,343 C 436,343 436,326 461,315 Z" />
+    <path d="M 444,355 C 450,366 442,384 425,380 C 414,378 417,361 444,355 Z" />
+    <!-- Inner leaves right -->
+    <path d="M 392,95 C 402,90 408,105 398,112 C 389,118 382,107 392,95 Z" />
+    <path d="M 415,128 C 424,124 428,138 418,145 C 410,150 403,139 415,128 Z" />
+    <path d="M 432,166 C 440,163 442,177 432,184 C 424,189 418,177 432,166 Z" />
+    <path d="M 442,206 C 450,205 450,219 440,225 C 432,229 427,217 442,206 Z" />
+    <path d="M 445,248 C 452,249 451,263 441,267 C 433,270 429,258 445,248 Z" />
+    <path d="M 440,290 C 446,293 443,307 433,309 C 425,311 423,299 440,290 Z" />
+  </g>
+
+  <!-- Outer Ring Base (Navy Blue #0E4369) with Golden Orange Border -->
+  <circle cx="250" cy="250" r="202" fill="#0E4369" stroke="#EB811B" stroke-width="4.5" />
+  <circle cx="250" cy="250" r="142" fill="#FFFFFF" stroke="#EB811B" stroke-width="4" />
+
+  <!-- Circular Arch Text: RV PUBLIC SCHOOL -->
+  <text fill="#FFFFFF" font-family="'Arial Black', 'Trebuchet MS', 'Montserrat', sans-serif" font-weight="900" font-size="33" letter-spacing="3.5">
+    <textPath href="#textArcTop" startOffset="50%" text-anchor="middle">
+      RV PUBLIC SCHOOL
+    </textPath>
+  </text>
+
+  <!-- Dot Separator Left -->
+  <circle cx="82" cy="252" r="8" fill="#EB811B" />
+  <!-- Dot Separator Right -->
+  <circle cx="418" cy="252" r="8" fill="#EB811B" />
+
+  <!-- Lower Left Text: ESTD. IN -->
+  <text fill="#FFFFFF" font-family="'Arial Black', 'Trebuchet MS', sans-serif" font-weight="800" font-size="21" letter-spacing="2">
+    <textPath href="#textArcBottomLeft" startOffset="50%" text-anchor="middle">
+      ESTD. IN
+    </textPath>
+  </text>
+
+  <!-- Lower Right Text: 2012 -->
+  <text fill="#FFFFFF" font-family="'Arial Black', 'Trebuchet MS', sans-serif" font-weight="800" font-size="23" letter-spacing="3">
+    <textPath href="#textArcBottomRight" startOffset="50%" text-anchor="middle">
+      2012
+    </textPath>
+  </text>
+
+  <!-- Central Inner White Circle with Deep Blue Ring -->
+  <circle cx="250" cy="250" r="116" fill="none" stroke="#0E4369" stroke-width="26" />
+
+  <!-- Center Graphic: Stylized 'R' and Checkmark 'V' Monogram -->
+  <g id="center-monogram">
+    <!-- Stylized Orange 'R' -->
+    <!-- Left vertical bar of R -->
+    <rect x="193" y="184" width="22" height="172" rx="3" fill="#EB811B" />
+    <!-- Upper loop of R -->
+    <path d="M 193,184 L 246,184 C 265,184 275,195 275,212 C 275,229 265,240 246,240 L 193,240 Z" fill="none" stroke="#EB811B" stroke-width="21" stroke-linejoin="round" />
+    <rect x="193" y="196" width="48" height="34" fill="#FFFFFF" />
+    
+    <!-- Stylized Blue Checkmark 'V' -->
+    <!-- Descending and soaring stroke of V -->
+    <path d="M 218,266 L 260,326 L 360,200" fill="none" stroke="#0E4369" stroke-width="26" stroke-linecap="square" stroke-linejoin="miter" />
+    <!-- White overlap mask to define layers neatly -->
+    <path d="M 218,266 L 260,326" fill="none" stroke="#0E4369" stroke-width="26" stroke-linecap="square" />
+  </g>
+
+  <!-- Bottom Ribbon / Banner -->
+  <g id="bottom-ribbon">
+    <!-- Ribbon tails left -->
+    <polygon points="28,400 95,380 95,432 28,452 50,426" fill="#0A3250" stroke="#EB811B" stroke-width="2.5" stroke-linejoin="round" />
+    <!-- Ribbon tails right -->
+    <polygon points="472,400 405,380 405,432 472,452 450,426" fill="#0A3250" stroke="#EB811B" stroke-width="2.5" stroke-linejoin="round" />
+    
+    <!-- Ribbon Main Body -->
+    <path d="M 80,392 Q 250,424 420,392 L 415,446 Q 250,480 85,446 Z" fill="#0E4369" stroke="#EB811B" stroke-width="3" stroke-linejoin="round" />
+
+    <!-- Ribbon Motto Text -->
+    <text fill="#FFFFFF" font-family="'Arial Black', 'Trebuchet MS', sans-serif" font-weight="900" font-size="20" letter-spacing="1.5">
+      <textPath href="#ribbonArc" startOffset="50%" text-anchor="middle">
+        COME TO LEARN  •  GO TO SERVE
+      </textPath>
+    </text>
+  </g>
+</svg>

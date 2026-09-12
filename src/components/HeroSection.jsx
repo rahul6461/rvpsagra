@@ -6,13 +6,13 @@ import { SCHOOL_INFO } from '../data/schoolData';
 const HERO_SLIDES = [
   {
     id: 1,
-    tag: 'Sprawling 8-Acre Campus • Estd. 2012',
+    tag: 'Sprawling 8-Acre Campus • Estd. 24 May 2012',
     headline: 'Empowering Minds, Shaping Futures',
     subheadline: '14+ Years of Educational Excellence, Moral Rectitude & Holistic Character Building in Agra',
     highlightBadge: "Agra's Largest School Sports Field & Green Campus",
-    imageUrl: 'https://images.unsplash.com/photo-1562774053-701939374585?q=80&w=1600&auto=format&fit=crop',
+    imageUrl: '/assets/photos/campus_building.jpeg',
     icon: Trophy,
-    features: ['100% CBSE Pass Record', 'Zero-Tuition Remedial Support', 'Safe GPS-Tracked Bus Fleet']
+    features: ['100% CBSE Pass Record', 'Zero-Tuition Remedial Support', 'Good Connectivity Network']
   },
   {
     id: 2,
@@ -30,19 +30,19 @@ const HERO_SLIDES = [
     headline: "Agra's Premier Athletic & Sports Arena",
     subheadline: 'Cultivating Mental Resilience, Team Spirit & National Championship Winners on Agra’s largest school field',
     highlightBadge: 'Full Cricket Turf, Football Ground & Athletics Track',
-    imageUrl: 'https://images.unsplash.com/photo-1529900748604-07564a03e7a6?q=80&w=1600&auto=format&fit=crop',
+    imageUrl: '/assets/photos/AnnualSportsDay.jpeg',
     icon: Trophy,
     features: ['Trained Athletics Coaches', 'Floodlit Volleyball & Basketball', 'Indoor TT & Chess Pavilion']
   },
   {
     id: 4,
-    tag: 'Reliable & Secure Commute',
-    headline: 'Safe GPS-Tracked School Bus Fleet',
+    tag: 'Reliable & Smooth City-Wide Commute',
+    headline: 'Good Connectivity Network for Smooth Transportation Over the City',
     subheadline: 'Extensive transportation coverage across Rohta, Sevla, Gwalior Highway, Saiyan, Tehra & Agra City',
-    highlightBadge: 'Real-Time GPS Tracking & Verified Female Attendants',
+    highlightBadge: 'Smooth Transportation Network & Verified Female Attendants',
     imageUrl: 'https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?q=80&w=1600&auto=format&fit=crop',
     icon: Bus,
-    features: ['Live Satellite GPS Tracking', 'Speed Governors (<40 km/h)', 'Female Conductors on Every Route']
+    features: ['Good Connectivity Network Across Agra', 'Speed Governors (<40 km/h)', 'Female Conductors on Every Route']
   }
 ];
 

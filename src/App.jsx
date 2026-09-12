@@ -4,6 +4,7 @@ import { Navbar } from './components/Navbar';
 import { HeroSection } from './components/HeroSection';
 import { StatCounter } from './components/StatCounter';
 import { WhyChooseSection } from './components/WhyChooseSection';
+import { CampusBuildingSection } from './components/CampusBuildingSection';
 import { AboutSection } from './components/AboutSection';
 import { AcademicsSection } from './components/AcademicsSection';
 import { ToppersSection } from './components/ToppersSection';
@@ -26,6 +27,7 @@ export function App() {
   useEffect(() => {
     const sectionIds = [
       'home',
+      'campus-building',
       'about',
       'academics',
       'toppers',
@@ -76,6 +78,9 @@ export function App() {
         {/* Why Choose R.V. Public School */}
         <WhyChooseSection />
 
+        {/* Dedicated School Building & Campus Section */}
+        <CampusBuildingSection onOpenAdmissionModal={() => setIsAdmissionModalOpen(true)} />
+
         {/* Founders Memorial (Large Photos) & Leadership (Principal & MD in Upper Part) */}
         <AboutSection />
 
@@ -85,7 +90,7 @@ export function App() {
         {/* CBSE Board Examination Toppers & Century Scorers */}
         <ToppersSection />
 
-        {/* Facilities Spotlight: Safe GPS-Tracked Bus Fleet */}
+        {/* Facilities Spotlight: Good Connectivity Network & Modern Infrastructure */}
         <FacilitiesSection />
 
         {/* Extracurricular Activities (House system removed) */}

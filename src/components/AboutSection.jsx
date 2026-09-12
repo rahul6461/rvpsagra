@@ -61,7 +61,7 @@ export const AboutSection = () => {
             Rooted in Noble Vision, Led by Educational Pioneers
           </h2>
           <p className="mt-4 text-base sm:text-lg text-slate-600">
-            Founded in 2012 under the aegis of RV Educational Trust, R.V. Public School blends time-honored Indian moral virtues with modern academic excellence on an 8-acre sprawling campus in Agra.
+            Founded on 24 May 2012 under the aegis of RV Educational Trust, R.V. Public School blends time-honored Indian moral virtues with modern academic excellence on an 8-acre sprawling campus in Agra.
           </p>
         </div>
 

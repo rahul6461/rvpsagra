@@ -17,8 +17,8 @@ export const FloatingWidgets = ({ onOpenAdmissionModal }) => {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  const cleanPhone = SCHOOL_INFO.primaryPhone.replace(/\D/g, '');
-  const whatsappUrl = `https://wa.me/91${cleanPhone}?text=${encodeURIComponent(
+  const whatsappNumber = SCHOOL_INFO.whatsappNumber || '7455957545';
+  const whatsappUrl = `https://wa.me/91${whatsappNumber}?text=${encodeURIComponent(
     'Hello, I would like to inquire about admissions at R.V. Public School, Agra.'
   )}`;
 

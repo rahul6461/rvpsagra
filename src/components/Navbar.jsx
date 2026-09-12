@@ -7,6 +7,7 @@ export const Navbar = ({ onOpenAdmissionModal, activeSection }) => {
 
   const navLinks = [
     { name: 'Home', href: '#home', id: 'home' },
+    { name: 'Campus', href: '#campus-building', id: 'campus-building' },
     { name: 'About Us', href: '#about', id: 'about' },
     { name: 'Academics', href: '#academics', id: 'academics' },
     { name: 'Toppers', href: '#toppers', id: 'toppers' },
@@ -37,12 +38,13 @@ export const Navbar = ({ onOpenAdmissionModal, activeSection }) => {
             onClick={(e) => handleNavClick(e, '#home')}
             className="flex items-center gap-3.5 group cursor-pointer"
           >
-            {/* Crest Emblem with royal blue theme */}
-            <div className="w-12 h-12 rounded-2xl bg-gradient-to-br from-blue-700 via-blue-600 to-sky-500 p-0.5 shadow-md flex items-center justify-center shrink-0 ring-2 ring-blue-100 group-hover:scale-105 transition-transform">
-              <div className="w-full h-full bg-white rounded-[14px] flex flex-col items-center justify-center text-blue-700">
-                <span className="font-extrabold text-lg leading-none tracking-tight font-serif">RV</span>
-                <span className="text-[9px] uppercase tracking-widest font-bold text-sky-600 mt-0.5">PS</span>
-              </div>
+            {/* Official School Crest Logo */}
+            <div className="w-13 h-13 rounded-2xl bg-white p-0.5 shadow-md flex items-center justify-center shrink-0 ring-2 ring-blue-200/80 group-hover:scale-105 transition-transform overflow-hidden">
+              <img
+                src="/assets/rv_logo.svg"
+                alt="RV Public School Logo"
+                className="w-full h-full object-contain"
+              />
             </div>
 
             {/* School Title & Affiliation Subtext */}
@@ -56,7 +58,7 @@ export const Navbar = ({ onOpenAdmissionModal, activeSection }) => {
                 </span>
                 <span className="text-slate-300">•</span>
                 <span className="text-[11px] font-medium text-slate-500 hidden sm:inline">
-                  CBSE 10+2
+                  Estd. 2012 • CBSE 10+2
                 </span>
               </div>
             </div>
