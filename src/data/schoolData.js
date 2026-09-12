@@ -223,7 +223,7 @@ Alongside academic excellence, we place great emphasis on sports and physical de
 Participation in sports helps students develop confidence, discipline, teamwork, leadership, and resilience.
 
 Our commitment is to continuously upgrade our campus and provide every child with opportunities to discover their talents, achieve their potential, and become responsible global citizens.`,
-    imageUrl: '/assets/photos/chairman.jpeg'
+    imageUrl: '/assets/photos/VishnuSir.jpeg'
   },
   {
     id: 'chairman',
