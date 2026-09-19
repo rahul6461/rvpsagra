@@ -2,10 +2,14 @@ import React, { useState } from 'react';
 import { Award, Phone, Mail, MapPin, ShieldCheck, ChevronRight, FileText, X, ExternalLink } from 'lucide-react';
 import { SCHOOL_INFO, MANDATORY_DISCLOSURE_DOCS } from '../data/schoolData';
 
-export const Footer = ({ onOpenAdmissionModal }) => {
+export const Footer = ({ onOpenAdmissionModal, onNavigateToGallery }) => {
   const [disclosureModalOpen, setDisclosureModalOpen] = useState(false);
 
   const scrollToSection = (id) => {
+    if (id === 'gallery' && onNavigateToGallery) {
+      onNavigateToGallery();
+      return;
+    }
     const el = document.getElementById(id);
     if (el) {
       el.scrollIntoView({ behavior: 'smooth' });
@@ -70,6 +74,7 @@ export const Footer = ({ onOpenAdmissionModal }) => {
                 { name: 'Co-Curricular & Student Life', id: 'activities' },
                 { name: 'Campus Photo Gallery', id: 'gallery' },
                 { name: 'Admission Guidelines 2026–27', id: 'admissions' },
+                { name: 'Parent Reviews & Ratings', id: 'reviews' },
                 { name: 'Campus Location & Contact', id: 'contact' },
               ].map((link, idx) => (
                 <li key={idx}>

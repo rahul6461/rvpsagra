@@ -22,6 +22,16 @@ export const SCHOOL_INFO = {
   city: 'Agra',
   state: 'Uttar Pradesh',
   pincode: '282009',
+  googleReviewsUrl: 'https://www.google.com/search?q=RV+Public+School&ludocid=1908401129389203516#lrd=0x397475d4a13e6141:0x1a7c36a49dbb383c,3',
+  googleDirectReviewUrl: 'https://search.google.com/local/writereview?placeid=ChIJQWE-odRFdDkRPDibnaQ2fBo',
+  googlePlaceId: '1908401129389203516',
+  googleRating: 4.8,
+  googleReviewCount: 84,
+  googleMapsUrl: 'https://www.google.com/maps/place/RV+Public+School/@27.0906396,78.0161034,3a,75y,296.82h,90t/data=!3m7!1e1!3m5!1swOVoH8_1sze_P8H02JeRsw!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D0%26panoid%3DwOVoH8_1sze_P8H02JeRsw%26yaw%3D296.82178!7i16384!8i8192!4m14!1m7!3m6!1s0x39747479a50ca7bd:0x1a7c00b74e32a03c!2sRV+Public+School!8m2!3d27.0907405!4d78.0158787!16s%2Fg%2F11c5rsq1dz!3m5!1s0x39747479a50ca7bd:0x1a7c00b74e32a03c!8m2!3d27.0907405!4d78.0158787!16s%2Fg%2F11c5rsq1dz',
+  coordinates: {
+    lat: 27.0907405,
+    lng: 78.0158787
+  },
   timings: {
     school: 'Monday – Saturday: 7:30 AM – 2:00 PM',
     office: 'Monday – Saturday: 8:00 AM – 3:30 PM'
@@ -681,81 +691,116 @@ export const SCHOOL_ACTIVITIES = [
 
 export const GALLERY_ITEMS = [
   {
-    id: 'gal-diwali',
-    title: 'Diwali Celebration & Rangoli Art',
-    category: 'Celebrations & Festivals',
-    imageUrl: '/assets/photos/gallery_rangoli.jpeg',
-    description: 'Spectacular student handcrafted rangoli designs and traditional festivities celebrating the spirit of Diwali.'
+    id: 'gal-assembly',
+    title: 'Assembly',
+    driveName: 'Assembly',
+    category: 'Campus & Infra',
+    imageUrl: '/assets/drive_gallery/Assembly.jpg',
+    description: 'Morning school assembly fostering discipline, prayer, moral values, and patriotic songs.'
   },
   {
-    id: 'gal-sports',
-    title: 'Annual Sports Day & Athletic Meet',
+    id: 'gal-kabaddi',
+    title: 'Kabaddi',
+    driveName: 'Kabaddi',
     category: 'Sports & Athletics',
-    imageUrl: '/assets/photos/AnnualSportsDay.jpeg',
-    description: 'Track events, sprint races, and athletics competitions held on the 8-acre school grounds.'
+    imageUrl: '/assets/drive_gallery/Kabaddi.jpg',
+    description: 'High-energy inter-house and district Kabaddi championship match on our 8-acre grounds.'
   },
   {
-    id: 'gal-award',
-    title: 'Annual Award Distribution & Felicitation',
+    id: 'gal-khokho',
+    title: 'KhoKho Champs',
+    driveName: 'KhoKho Champs',
+    category: 'Sports & Athletics',
+    imageUrl: '/assets/drive_gallery/KhoKho_Champs.jpg',
+    description: 'Kho-Kho championship winners celebrating victory with their coach and medals.'
+  },
+  {
+    id: 'gal-interschool-winners',
+    title: 'InterSchool Tournament Winners',
+    driveName: 'InterSchool Tournament Winners',
+    category: 'Sports & Athletics',
+    imageUrl: '/assets/drive_gallery/InterSchool_Tournament_Winners.jpg',
+    description: 'RVPS student team lifting the prestigious Inter-School Tournament championship trophy.'
+  },
+  {
+    id: 'gal-honouring-champs',
+    title: 'Honouring Champions',
+    driveName: 'Honouring Champions',
+    category: 'Sports & Athletics',
+    imageUrl: '/assets/drive_gallery/Honouring_Champions.jpg',
+    description: 'Felicitation ceremony honoring sports champions, athletes, and championship trophy winners.'
+  },
+  {
+    id: 'gal-sansad-khel',
+    title: 'Sansad Khel Mahotsav (SP singh baghel)',
+    driveName: 'Sansad Khel Mahotsav (SP singh baghel)',
+    category: 'Sports & Athletics',
+    imageUrl: '/assets/drive_gallery/Sansad_Khel_Mahotsav_SP_singh_baghel.jpg',
+    description: 'Felicitation ceremony at Sansad Khel Mahotsav presided by Union Minister Prof. S.P. Singh Baghel.'
+  },
+  {
+    id: 'gal-graduation',
+    title: 'Graduation Day',
+    driveName: 'Graduation Day',
     category: 'Celebrations & Festivals',
-    imageUrl: '/assets/photos/AwardDistribution.jpeg',
-    description: 'Honoring academic toppers, subject distinction holders, and sports medalists.'
+    imageUrl: '/assets/drive_gallery/Graduation_Day.jpg',
+    description: 'Graduation Day convocation ceremony celebrating student milestones and awarding diplomas.'
   },
   {
-    id: 'gal-innovation',
-    title: 'Annual Science & Innovation Day',
+    id: 'gal-farewell',
+    title: "Farewell'26",
+    driveName: "Farewell'26",
+    category: 'Celebrations & Festivals',
+    imageUrl: '/assets/drive_gallery/Farewell26.jpg',
+    description: "Memorable Class XII Farewell '26 ceremony bidding adieu with blessings and cherished memories."
+  },
+  {
+    id: 'gal-school-fair',
+    title: 'School Fair',
+    driveName: 'School Fair',
+    category: 'Celebrations & Festivals',
+    imageUrl: '/assets/drive_gallery/School_Fair.jpg',
+    description: 'Annual school fair and exhibition stalls showcasing student innovation, games, and culinary skills.'
+  },
+  {
+    id: 'gal-creative-minds',
+    title: 'Our Creative Minds',
+    driveName: 'Our Creative Minds',
     category: 'Science & Labs',
-    imageUrl: '/assets/photos/AnnualInnovationDay.jpeg',
-    description: 'Student-designed working models, technological projects, and eco-innovations on display.'
+    imageUrl: '/assets/drive_gallery/Our_Creative_Minds.jpg',
+    description: 'Student art and innovation exhibition displaying paintings, crafts, and creative projects.'
   },
   {
-    id: 'gal-independence',
-    title: 'Independence Day Patriotic Celebrations',
+    id: 'gal-team-art',
+    title: 'Team Art Competition',
+    driveName: 'Team Art Competition',
     category: 'Celebrations & Festivals',
-    imageUrl: '/assets/photos/IndependenceDay.jpeg',
-    description: 'Tricolor flag hoisting ceremony, parade salutes, and patriotic cultural presentations.'
+    imageUrl: '/assets/drive_gallery/Team_Art_Competition.jpg',
+    description: 'Inter-house team art competition showcasing creative painting, sketching, and poster making.'
   },
   {
-    id: 'gal-yoga',
-    title: 'International Yoga Day Assembly',
-    category: 'Sports & Athletics',
-    imageUrl: '/assets/photos/InternationalYogaDay.jpeg',
-    description: 'Mass yoga posture practice, pranayama, and mindful wellness routines by students and teachers.'
+    id: 'gal-holi',
+    title: 'Holi Celebration',
+    driveName: 'Holi Celebration',
+    category: 'Celebrations & Festivals',
+    imageUrl: '/assets/drive_gallery/Holi_Celebration.jpg',
+    description: 'Joyous, vibrant Holi festival celebrations with colors, music, and brotherhood on campus.'
   },
   {
-    id: 'gal-clean-india',
-    title: 'Clean India Green India Campaign',
+    id: 'gal-rvps-family',
+    title: 'RVPS Family',
+    driveName: 'RVPS Family',
     category: 'Campus & Infra',
-    imageUrl: '/assets/photos/CleanIndiaGreenIndia.jpeg',
-    description: 'Student awareness rally and campus cleanliness drive under the Swachh Bharat mission.'
-  },
-  {
-    id: 'gal-earth-day',
-    title: 'Earth Day Tree Plantation Drive',
-    category: 'Campus & Infra',
-    imageUrl: '/assets/photos/EarthDay.jpeg',
-    description: 'Tree plantation and environmental care activities preserving our green 8-acre campus.'
-  },
-  {
-    id: 'gal-ima-tour',
-    title: 'Educational Tour to IMA Dehradun',
-    category: 'Campus & Infra',
-    imageUrl: '/assets/photos/IMADehradunTour.jpeg',
-    description: 'Senior students exploring the Indian Military Academy in Dehradun for leadership orientation.'
+    imageUrl: '/assets/drive_gallery/RVPS_Family.jpg',
+    description: 'The dedicated faculty, mentors, and institutional leadership of R.V. Public School Agra.'
   },
   {
     id: 'gal-campus',
     title: 'R.V. Public School Campus Building',
+    driveName: 'Campus Building',
     category: 'Campus & Infra',
     imageUrl: '/assets/photos/campus_building.jpeg',
     description: 'Modern school building and academic facilities located at Garhi Thakur Das, Gwalior Road, Agra.'
-  },
-  {
-    id: 'gal-prospectus',
-    title: 'Official School Prospectus & Brochure',
-    category: 'Campus & Infra',
-    imageUrl: '/assets/photos/Prospectus.jpeg',
-    description: 'Academic overview and admission guidelines for parents and prospective students.'
   }
 ];
 

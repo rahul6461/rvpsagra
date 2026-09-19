@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { Sparkles, CheckCircle2, Phone, Mail, User, BookOpen, Send, Calendar, Clock, MapPin } from 'lucide-react';
+import { Sparkles, CheckCircle2, Phone, Mail, User, BookOpen, Send, Calendar, Clock, MapPin, MessageCircle } from 'lucide-react';
 import { ADMISSION_STEPS, AGE_CRITERIA_TABLE, SCHOOL_INFO } from '../data/schoolData';
+import { openWhatsApp } from '../utils/whatsapp';
 
 export const AdmissionSection = ({ onOpenAdmissionModal }) => {
   const [formData, setFormData] = useState({
@@ -19,6 +20,21 @@ export const AdmissionSection = ({ onOpenAdmissionModal }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setSubmitted(true);
+
+    const message = `*New Admission Enquiry — R.V. Public School, Agra*
+----------------------------------------
+*Parent / Guardian Name:* ${formData.parentName}
+*Phone Number:* ${formData.phone}
+*Email:* ${formData.email || 'Not provided'}
+*Student Name:* ${formData.childName}
+*Seeking Grade:* ${formData.seekingGrade}${formData.seekingGrade.includes('XI') ? ` (${formData.streamChoice})` : ''}
+*Agra Locality:* ${formData.locality || 'Not specified'}
+*Transport Required:* ${formData.needsTransport === 'yes' ? 'Yes (Bus Needed)' : 'No (Self Conveyance)'}
+${formData.notes ? `*Remarks:* ${formData.notes}` : ''}
+----------------------------------------
+_Sent via RVPS Website Admission Portal_`;
+
+    openWhatsApp(message);
   };
 
   return (
@@ -157,14 +173,29 @@ export const AdmissionSection = ({ onOpenAdmissionModal }) => {
                   Enquiry Successfully Registered!
                 </h4>
                 <p className="text-xs sm:text-sm text-slate-600 max-w-md mx-auto mb-6">
-                  Thank you, <strong>{formData.parentName}</strong>. Our admissions officer will contact you at <strong>{formData.phone}</strong> to guide you through registration and schedule your campus visit.
+                  Thank you, <strong>{formData.parentName}</strong>. Your enquiry has been sent to our admissions desk via WhatsApp and our admissions officer will contact you at <strong>{formData.phone}</strong>.
                 </p>
-                <button
-                  onClick={() => setSubmitted(false)}
-                  className="px-6 py-2.5 rounded-xl bg-blue-700 text-white font-bold text-xs hover:bg-blue-800 transition-colors cursor-pointer"
-                >
-                  Submit Another Enquiry
-                </button>
+                <div className="flex flex-wrap items-center justify-center gap-3">
+                  <button
+                    onClick={() => {
+                      const message = `*Admission Follow-up — R.V. Public School, Agra*
+Parent: ${formData.parentName}
+Phone: ${formData.phone}
+Student: ${formData.childName} (Grade: ${formData.seekingGrade})`;
+                      openWhatsApp(message);
+                    }}
+                    className="px-5 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs flex items-center gap-2 transition-colors cursor-pointer"
+                  >
+                    <MessageCircle className="w-4 h-4" />
+                    <span>Open in WhatsApp</span>
+                  </button>
+                  <button
+                    onClick={() => setSubmitted(false)}
+                    className="px-5 py-2.5 rounded-xl bg-blue-700 text-white font-bold text-xs hover:bg-blue-800 transition-colors cursor-pointer"
+                  >
+                    Submit Another Enquiry
+                  </button>
+                </div>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-4">
@@ -304,10 +335,10 @@ export const AdmissionSection = ({ onOpenAdmissionModal }) => {
 
                 <button
                   type="submit"
-                  className="w-full py-3.5 rounded-xl bg-gradient-to-r from-blue-700 to-blue-600 hover:from-blue-800 hover:to-blue-700 text-white font-bold text-sm shadow-md hover:shadow-blue-500/20 transition-all flex items-center justify-center gap-2 cursor-pointer"
+                  className="w-full py-3.5 rounded-xl bg-gradient-to-r from-emerald-600 via-emerald-700 to-blue-700 hover:from-emerald-700 hover:to-blue-800 text-white font-bold text-sm shadow-md hover:shadow-emerald-500/20 transition-all flex items-center justify-center gap-2 cursor-pointer"
                 >
-                  <Send className="w-4 h-4" />
-                  <span>Submit Admission Application</span>
+                  <MessageCircle className="w-5 h-5 text-emerald-200" />
+                  <span>Submit & Connect on WhatsApp</span>
                 </button>
               </form>
             )}

@@ -3,7 +3,7 @@ import { Menu, X, Sparkles } from 'lucide-react';
 import { SCHOOL_INFO } from '../data/schoolData';
 import { SchoolLogo } from './SchoolLogo';
 
-export const Navbar = ({ onOpenAdmissionModal, activeSection }) => {
+export const Navbar = ({ onOpenAdmissionModal, activeSection, onNavigateToGallery }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   const navLinks = [
@@ -14,15 +14,20 @@ export const Navbar = ({ onOpenAdmissionModal, activeSection }) => {
     { name: 'Toppers', href: '#toppers', id: 'toppers' },
     { name: 'Facilities', href: '#facilities', id: 'facilities' },
     { name: 'Activities', href: '#activities', id: 'activities' },
-    { name: 'Gallery', href: '#gallery', id: 'gallery' },
+    { name: 'Gallery', href: '#gallery', id: 'gallery', isGallery: true },
     { name: 'Admissions', href: '#admissions', id: 'admissions' },
+    { name: 'Reviews', href: '#reviews', id: 'reviews' },
     { name: 'Contact', href: '#contact', id: 'contact' },
   ];
 
-  const handleNavClick = (e, href) => {
+  const handleNavClick = (e, link) => {
     e.preventDefault();
     setMobileMenuOpen(false);
-    const targetId = href.replace('#', '');
+    if (link.isGallery && onNavigateToGallery) {
+      onNavigateToGallery();
+      return;
+    }
+    const targetId = link.href.replace('#', '');
     const element = document.getElementById(targetId);
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' });
@@ -69,7 +74,7 @@ export const Navbar = ({ onOpenAdmissionModal, activeSection }) => {
                 <a
                   key={link.id}
                   href={link.href}
-                  onClick={(e) => handleNavClick(e, link.href)}
+                  onClick={(e) => handleNavClick(e, link)}
                   className={`px-3 py-2 rounded-lg text-xs font-bold tracking-wide transition-all ${
                     isActive
                       ? 'text-blue-700 bg-blue-50 font-extrabold shadow-xs'
@@ -115,7 +120,7 @@ export const Navbar = ({ onOpenAdmissionModal, activeSection }) => {
               <a
                 key={link.id}
                 href={link.href}
-                onClick={(e) => handleNavClick(e, link.href)}
+                onClick={(e) => handleNavClick(e, link)}
                 className={`block px-4 py-2.5 rounded-xl text-sm font-semibold transition-colors ${
                   isActive
                     ? 'bg-blue-50 text-blue-700 font-bold'

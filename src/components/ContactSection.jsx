@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { MapPin, Phone, Mail, Clock, Send, CheckCircle2, MessageSquare, Bus } from 'lucide-react';
+import { MapPin, Phone, Mail, Clock, Send, CheckCircle2, MessageSquare, Bus, MessageCircle } from 'lucide-react';
 import { SCHOOL_INFO, BUS_ROUTES } from '../data/schoolData';
+import { openWhatsApp } from '../utils/whatsapp';
 
 export const ContactSection = () => {
   const [msgForm, setMsgForm] = useState({
@@ -15,6 +16,19 @@ export const ContactSection = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setSubmitted(true);
+
+    const text = `*New Contact Message — R.V. Public School, Agra*
+----------------------------------------
+*From:* ${msgForm.name}
+*Phone:* ${msgForm.phone}
+*Email:* ${msgForm.email || 'Not provided'}
+*Subject:* ${msgForm.subject || 'General Inquiry'}
+*Message:*
+${msgForm.message}
+----------------------------------------
+_Sent via RVPS Website Contact Form_`;
+
+    openWhatsApp(text);
   };
 
   return (
@@ -129,32 +143,44 @@ export const ContactSection = () => {
           <div className="lg:col-span-7 space-y-6">
             {/* Google Maps Container */}
             <div className="bg-white rounded-3xl overflow-hidden border border-blue-100 shadow-sm">
-              <div className="p-4 bg-slate-50 border-b border-blue-100 flex items-center justify-between">
+              <div className="p-4 bg-slate-50 border-b border-blue-100 flex flex-wrap items-center justify-between gap-2">
                 <span className="text-xs font-bold uppercase text-slate-700 flex items-center gap-1.5">
-                  <MapPin className="w-4 h-4 text-rose-500" />
-                  <span>Campus Location on Map (Agra, UP)</span>
+                  <MapPin className="w-4 h-4 text-rose-500 shrink-0" />
+                  <span>RV Public School Campus Location & Street View (Agra)</span>
                 </span>
                 <a
-                  href="https://maps.google.com/?q=Rohta+Gwalior+Road+Agra"
+                  href="https://www.google.com/maps/place/RV+Public+School/@27.0906396,78.0161034,3a,75y,296.82h,90t/data=!3m7!1e1!3m5!1swOVoH8_1sze_P8H02JeRsw!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D0%26panoid%3DwOVoH8_1sze_P8H02JeRsw%26yaw%3D296.82178!7i16384!8i8192!4m14!1m7!3m6!1s0x39747479a50ca7bd:0x1a7c00b74e32a03c!2sRV+Public+School!8m2!3d27.0907405!4d78.0158787!16s%2Fg%2F11c5rsq1dz!3m5!1s0x39747479a50ca7bd:0x1a7c00b74e32a03c!8m2!3d27.0907405!4d78.0158787!16s%2Fg%2F11c5rsq1dz"
                   target="_blank"
                   rel="noreferrer"
-                  className="text-xs font-bold text-blue-700 hover:underline"
+                  className="text-xs font-bold text-blue-700 hover:underline inline-flex items-center gap-1"
                 >
-                  Open in Google Maps ↗
+                  <span>Open 360° Street View & Directions</span>
+                  <span>↗</span>
                 </a>
               </div>
-              <div className="h-72 w-full bg-slate-200 relative">
+              <div className="h-80 w-full bg-slate-200 relative">
                 <iframe
-                  title="R.V. Public School Agra Location Map"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d113655.43890250917!2d77.92525143329718!3d27.108098042578586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39740b2a7593c783%3A0x24ffc965c71a3e62!2sRohta%2C%20Agra%2C%20Uttar%20Pradesh!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+                  title="RV Public School Campus Map & Street View"
+                  src="https://maps.google.com/maps?q=27.0907405,78.0158787+(RV+Public+School)&t=&z=16&ie=UTF8&iwloc=B&output=embed"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
-                  allowFullScreen={false}
+                  allowFullScreen={true}
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                   className="w-full h-full"
                 />
+              </div>
+              <div className="p-3 bg-blue-50/70 border-t border-blue-100 flex items-center justify-between text-[11px] text-blue-900">
+                <span>📍 Coordinates: 27.0907405° N, 78.0158787° E • Rohta, Gwalior Road</span>
+                <a
+                  href="https://www.google.com/maps/place/RV+Public+School/@27.0906396,78.0161034,3a,75y,296.82h,90t/data=!3m7!1e1!3m5!1swOVoH8_1sze_P8H02JeRsw!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D0%26panoid%3DwOVoH8_1sze_P8H02JeRsw%26yaw%3D296.82178!7i16384!8i8192!4m14!1m7!3m6!1s0x39747479a50ca7bd:0x1a7c00b74e32a03c!2sRV+Public+School!8m2!3d27.0907405!4d78.0158787!16s%2Fg%2F11c5rsq1dz!3m5!1s0x39747479a50ca7bd:0x1a7c00b74e32a03c!8m2!3d27.0907405!4d78.0158787!16s%2Fg%2F11c5rsq1dz"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="font-bold text-blue-700 hover:underline"
+                >
+                  View Gate Street View ↗
+                </a>
               </div>
             </div>
 
@@ -169,17 +195,32 @@ export const ContactSection = () => {
 
               {submitted ? (
                 <div className="p-6 bg-blue-50 rounded-2xl border border-blue-200 text-center animate-in fade-in">
-                  <CheckCircle2 className="w-10 h-10 text-blue-700 mx-auto mb-2" />
-                  <h4 className="text-base font-bold text-blue-950 font-serif">Message Received</h4>
+                  <CheckCircle2 className="w-10 h-10 text-emerald-600 mx-auto mb-2" />
+                  <h4 className="text-base font-bold text-blue-950 font-serif">Message Sent to WhatsApp</h4>
                   <p className="text-xs text-slate-600 mt-1 mb-4">
-                    Thank you, <strong>{msgForm.name}</strong>. The administrative desk has logged your inquiry.
+                    Thank you, <strong>{msgForm.name}</strong>. Your message was forwarded directly to the school administrative WhatsApp desk.
                   </p>
-                  <button
-                    onClick={() => setSubmitted(false)}
-                    className="px-4 py-2 rounded-xl bg-blue-700 text-white font-bold text-xs hover:bg-blue-800 transition-colors cursor-pointer"
-                  >
-                    Send Another Message
-                  </button>
+                  <div className="flex flex-wrap items-center justify-center gap-2">
+                    <button
+                      onClick={() => {
+                        const text = `*Inquiry Follow-up:*
+From: ${msgForm.name}
+Phone: ${msgForm.phone}
+Subject: ${msgForm.subject || 'School Inquiry'}`;
+                        openWhatsApp(text);
+                      }}
+                      className="px-4 py-2 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs flex items-center gap-1.5 transition-colors cursor-pointer"
+                    >
+                      <MessageCircle className="w-3.5 h-3.5" />
+                      <span>Open WhatsApp</span>
+                    </button>
+                    <button
+                      onClick={() => setSubmitted(false)}
+                      className="px-4 py-2 rounded-xl bg-blue-700 text-white font-bold text-xs hover:bg-blue-800 transition-colors cursor-pointer"
+                    >
+                      Send Another Message
+                    </button>
+                  </div>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-3">
@@ -245,10 +286,10 @@ export const ContactSection = () => {
 
                   <button
                     type="submit"
-                    className="w-full py-3 rounded-xl bg-blue-700 hover:bg-blue-800 text-white font-bold text-xs shadow-md transition-colors flex items-center justify-center gap-2 cursor-pointer"
+                    className="w-full py-3 rounded-xl bg-gradient-to-r from-emerald-600 to-blue-700 hover:from-emerald-700 hover:to-blue-800 text-white font-bold text-xs shadow-md transition-all flex items-center justify-center gap-2 cursor-pointer"
                   >
-                    <Send className="w-4 h-4" />
-                    <span>Send Message to Administration</span>
+                    <MessageCircle className="w-4 h-4 text-emerald-200" />
+                    <span>Send Message via WhatsApp</span>
                   </button>
                 </form>
               )}

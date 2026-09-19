@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { X, Sparkles, CheckCircle2, Phone, User, Send, ShieldCheck } from 'lucide-react';
+import { X, Sparkles, CheckCircle2, Phone, User, Send, ShieldCheck, MessageCircle } from 'lucide-react';
 import { SCHOOL_INFO } from '../data/schoolData';
+import { openWhatsApp } from '../utils/whatsapp';
 
 export const AdmissionModal = ({ isOpen, onClose }) => {
   const [formData, setFormData] = useState({
@@ -18,6 +19,19 @@ export const AdmissionModal = ({ isOpen, onClose }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setSubmitted(true);
+
+    const message = `*Quick Admission Enquiry — R.V. Public School, Agra*
+----------------------------------------
+*Parent / Guardian Name:* ${formData.parentName}
+*Phone / WhatsApp:* ${formData.phone}
+*Student Name:* ${formData.childName}
+*Grade Seeking:* ${formData.grade}
+*Agra Locality:* ${formData.locality || 'Not specified'}
+*Bus Transport Needed:* ${formData.needsBus === 'yes' ? 'Yes' : 'No'}
+----------------------------------------
+_Sent via Quick Admission Modal on RVPS Website_`;
+
+    openWhatsApp(message);
   };
 
   const handleResetAndClose = () => {
@@ -69,21 +83,36 @@ export const AdmissionModal = ({ isOpen, onClose }) => {
         {/* Form Body */}
         {submitted ? (
           <div className="py-8 text-center animate-in fade-in">
-            <div className="w-14 h-14 rounded-full bg-blue-600 text-white flex items-center justify-center mx-auto mb-4 shadow-md">
+            <div className="w-14 h-14 rounded-full bg-emerald-600 text-white flex items-center justify-center mx-auto mb-4 shadow-md">
               <CheckCircle2 className="w-8 h-8" />
             </div>
             <h4 className="text-xl font-bold text-blue-950 font-serif mb-2">
-              Enquiry Successfully Registered!
+              Enquiry Forwarded to WhatsApp!
             </h4>
             <p className="text-xs sm:text-sm text-slate-600 max-w-sm mx-auto mb-6">
-              Thank you, <strong>{formData.parentName}</strong>. Our admissions counselor will contact you at <strong>{formData.phone}</strong> shortly to discuss curriculum and arrange your campus tour.
+              Thank you, <strong>{formData.parentName}</strong>. Your enquiry has been sent to our admissions counselor via WhatsApp and we will follow up with you at <strong>{formData.phone}</strong> shortly.
             </p>
-            <button
-              onClick={handleResetAndClose}
-              className="px-6 py-2.5 rounded-xl bg-blue-700 text-white font-bold text-xs hover:bg-blue-800 transition-colors cursor-pointer"
-            >
-              Close Window
-            </button>
+            <div className="flex flex-wrap items-center justify-center gap-2">
+              <button
+                onClick={() => {
+                  const message = `*Quick Admission Follow-up:*
+Parent: ${formData.parentName}
+Phone: ${formData.phone}
+Student: ${formData.childName} (Grade: ${formData.grade})`;
+                  openWhatsApp(message);
+                }}
+                className="px-5 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-bold text-xs flex items-center gap-1.5 transition-colors cursor-pointer"
+              >
+                <MessageCircle className="w-4 h-4" />
+                <span>Open in WhatsApp</span>
+              </button>
+              <button
+                onClick={handleResetAndClose}
+                className="px-5 py-2.5 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-700 font-bold text-xs transition-colors cursor-pointer"
+              >
+                Close Window
+              </button>
+            </div>
           </div>
         ) : (
           <form onSubmit={handleSubmit} className="py-4 space-y-3.5">
@@ -192,10 +221,10 @@ export const AdmissionModal = ({ isOpen, onClose }) => {
 
             <button
               type="submit"
-              className="w-full mt-2 py-3 rounded-xl bg-blue-700 hover:bg-blue-800 text-white font-bold text-xs sm:text-sm shadow-md transition-colors flex items-center justify-center gap-2 cursor-pointer"
+              className="w-full mt-2 py-3 rounded-xl bg-gradient-to-r from-emerald-600 via-emerald-700 to-blue-700 hover:from-emerald-700 hover:to-blue-800 text-white font-bold text-xs sm:text-sm shadow-md transition-all flex items-center justify-center gap-2 cursor-pointer"
             >
-              <Send className="w-4 h-4" />
-              <span>Submit Admission Enquiry</span>
+              <MessageCircle className="w-4 h-4 text-emerald-200" />
+              <span>Submit & Open in WhatsApp</span>
             </button>
           </form>
         )}

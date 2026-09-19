@@ -11,6 +11,7 @@ import { ToppersSection } from './components/ToppersSection';
 import { FacilitiesSection } from './components/FacilitiesSection';
 import { ActivitiesSection } from './components/ActivitiesSection';
 import { GallerySection } from './components/GallerySection';
+import { FullGalleryPage } from './components/FullGalleryPage';
 import { AdmissionSection } from './components/AdmissionSection';
 import { TestimonialsSection } from './components/TestimonialsSection';
 import { FaqSection } from './components/FaqSection';
@@ -22,9 +23,25 @@ import { FloatingWidgets } from './components/FloatingWidgets';
 export function App() {
   const [isAdmissionModalOpen, setIsAdmissionModalOpen] = useState(false);
   const [activeSection, setActiveSection] = useState('home');
+  const [currentView, setCurrentView] = useState(() => {
+    return window.location.hash === '#gallery' ? 'gallery' : 'home';
+  });
 
-  // Scroll-spy observer to highlight active navigation link
+  // Listen to hash changes (for back/forward navigation or direct links)
   useEffect(() => {
+    const handleHashChange = () => {
+      if (window.location.hash === '#gallery') {
+        setCurrentView('gallery');
+      }
+    };
+    window.addEventListener('hashchange', handleHashChange);
+    return () => window.removeEventListener('hashchange', handleHashChange);
+  }, []);
+
+  // Scroll-spy observer to highlight active navigation link on main page
+  useEffect(() => {
+    if (currentView !== 'home') return;
+
     const sectionIds = [
       'home',
       'campus-building',
@@ -33,8 +50,8 @@ export function App() {
       'toppers',
       'facilities',
       'activities',
-      'gallery',
       'admissions',
+      'reviews',
       'contact'
     ];
 
@@ -56,7 +73,46 @@ export function App() {
 
     window.addEventListener('scroll', handleScroll, { passive: true });
     return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  }, [currentView]);
+
+  const navigateToGallery = () => {
+    setCurrentView('gallery');
+    window.location.hash = '#gallery';
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const navigateToHome = (targetId = 'home') => {
+    setCurrentView('home');
+    window.location.hash = targetId === 'home' ? '' : `#${targetId}`;
+    setTimeout(() => {
+      if (targetId === 'home') {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      } else {
+        const el = document.getElementById(targetId);
+        if (el) el.scrollIntoView({ behavior: 'smooth' });
+      }
+    }, 50);
+  };
+
+  if (currentView === 'gallery') {
+    return (
+      <div className="min-h-screen bg-white text-slate-900 selection:bg-blue-600 selection:text-white font-sans antialiased">
+        <FullGalleryPage
+          onBackToHome={() => navigateToHome('home')}
+          onOpenAdmissionModal={() => setIsAdmissionModalOpen(true)}
+        />
+        <Footer
+          onOpenAdmissionModal={() => setIsAdmissionModalOpen(true)}
+          onNavigateToGallery={navigateToGallery}
+        />
+        <AdmissionModal
+          isOpen={isAdmissionModalOpen}
+          onClose={() => setIsAdmissionModalOpen(false)}
+        />
+        <FloatingWidgets onOpenAdmissionModal={() => setIsAdmissionModalOpen(true)} />
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen bg-white text-slate-900 selection:bg-blue-600 selection:text-white font-sans antialiased">
@@ -65,6 +121,7 @@ export function App() {
       <Navbar
         onOpenAdmissionModal={() => setIsAdmissionModalOpen(true)}
         activeSection={activeSection}
+        onNavigateToGallery={navigateToGallery}
       />
 
       {/* 2. Main Content Flow */}
@@ -96,9 +153,6 @@ export function App() {
         {/* Extracurricular Activities (House system removed) */}
         <ActivitiesSection />
 
-        {/* Campus Photo Gallery */}
-        <GallerySection />
-
         {/* Admissions Roadmap, Age Criteria & Enquiry Form */}
         <AdmissionSection onOpenAdmissionModal={() => setIsAdmissionModalOpen(true)} />
 
@@ -113,7 +167,10 @@ export function App() {
       </main>
 
       {/* 3. Comprehensive Institutional Footer with CBSE Disclosures */}
-      <Footer onOpenAdmissionModal={() => setIsAdmissionModalOpen(true)} />
+      <Footer
+        onOpenAdmissionModal={() => setIsAdmissionModalOpen(true)}
+        onNavigateToGallery={navigateToGallery}
+      />
 
       {/* 4. Interactive Modals & Floating Connectors */}
       <AdmissionModal
