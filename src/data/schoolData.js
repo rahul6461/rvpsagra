@@ -185,7 +185,7 @@ export const LEADERSHIP_MESSAGES = [
     id: 'principal',
     name: 'Mr. Kamal Singh',
     designation: 'Principal',
-    qualifications: 'M.Sc., B.Ed.',
+    qualifications: 'M.A., B.Ed.',
     motto: 'Truth Ever Prevails — Satyam Eva Jayate',
     excerpt: 'Fostering academic rigor, disciplined curiosity, and individual care that eliminates any dependency on outside coaching.',
     fullMessage: `"The best way to predict your future is to weave it."
