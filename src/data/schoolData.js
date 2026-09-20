@@ -849,6 +849,12 @@ export const TESTIMONIALS = [
 
 export const FAQS_DATA = [
   {
+    id: 'faq-top-school',
+    question: 'Why is RV Public School ranked among the top CBSE schools in Agra?',
+    answer: 'R.V. Public School (RVPS Agra) is recognized among the top CBSE schools in Agra due to its sprawling 8-acre pollution-free green campus, 14+ years of educational excellence, consistent 100% CBSE board results, zero-tuition remedial teaching framework, modern 4K digital smart classrooms, composite science laboratories, and Agra’s premier athletic sports grounds with specialized coaching.',
+    category: 'Top School in Agra'
+  },
+  {
     id: 'faq-1',
     question: 'What is the admission procedure for Nursery to Class XII for 2026–27?',
     answer: 'Admissions are open for Nursery through Class XII. Parents can submit the online enquiry form on this portal or collect the registration prospectus from the school administrative desk. For pre-primary, an informal parent-child interaction is scheduled. For Classes I to IX & XI, a diagnostic review of previous records and basic readiness takes place.',

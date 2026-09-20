@@ -34,13 +34,13 @@ export const WhyChooseSection = () => {
         <div className="text-center max-w-3xl mx-auto mb-14">
           <div className="inline-flex items-center gap-1.5 px-3.5 py-1 rounded-full bg-blue-50 border border-blue-200 text-blue-800 text-xs font-bold uppercase tracking-wider mb-3">
             <ShieldCheck className="w-3.5 h-3.5 text-blue-600" />
-            <span>Institutional Hallmarks</span>
+            <span>Ranked Among Top CBSE Schools in Agra</span>
           </div>
           <h2 className="text-3xl sm:text-4xl font-extrabold text-slate-900 tracking-tight font-serif">
             Why Discerning Families Choose R.V. Public School
           </h2>
           <p className="mt-4 text-base sm:text-lg text-slate-600">
-            A harmonious synthesis of rigorous academic inquiry, moral discipline, state-of-the-art sports infrastructure, and dedicated student care.
+            Recognized among the leading Senior Secondary CBSE schools in Agra — blending rigorous academics, moral rectitude, an 8-acre green sports campus, and zero-tuition remedial mentoring.
           </p>
         </div>
 
